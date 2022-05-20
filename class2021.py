@@ -3,8 +3,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import altair as alt
-import plotly.express as px
 import streamlit as st
 
 #日本語文字化け対策でフォント指定
