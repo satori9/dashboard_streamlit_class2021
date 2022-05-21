@@ -9,7 +9,7 @@ import streamlit as st
 sns.set(font='Hiragino Sans')
 plt.rcParams['font.family'] = "Hiragino Sans"
 
-st.title("2021年度色彩アンケート結果")
+st.title("2021年度色彩トレーニング結果")
 
 
 #2021年のクラス分をクレンジングしたデータ
