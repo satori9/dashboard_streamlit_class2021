@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+import japanize_matplotlib
 
 #日本語文字化け対策でフォント指定
 sns.set(font='Yu Gothic')
