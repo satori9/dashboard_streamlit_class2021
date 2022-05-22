@@ -14,6 +14,16 @@ st.title("2021年度色彩トレーニング結果")
 
 #2021年のクラス分をクレンジングしたデータ
 df = pd.read_csv("class_2021.csv")
+#データ型を確認
+df.dtypes
+#　欠損値の確認
+df.isnull().any()
+df.isnull().sum()
+#欠損値を０で補う
+df.fillna('FILL')
+df.info()
+df['col_sum'] = df['col_sum'].fillna(0).astype('int64')
+df.info()
 
 #下準備データ -ひとまずexpanderでラッピング。本来は非表示にしたい。
 with st.expander("show data"):
