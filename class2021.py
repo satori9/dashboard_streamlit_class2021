@@ -451,21 +451,20 @@ with col5:
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
-    st.subheader("あなたの選択した３色")
-if choose_id == '1':    
-    col1, col2, col3 = st.columns(3)
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
 
-with col1:
-    color = st.color_picker('Q1-1', '#FFFFFF')
-    st.write(color)
+    with col1:
+       color = st.color_picker('Q1-1', '#FFFFFF')
+      st.write(color)
 
-with col2:
-    color = st.color_picker('Q1_2', '#FFB8E6')
-    st.write(color)
+    with col2:
+       color = st.color_picker('Q1_2', '#FFB8E6')
+       st.write(color)
 
-with col3:
-    color = st.color_picker('Q1-3', '#FFE8E8')
-    st.write(color)
+    with col3:
+       color = st.color_picker('Q1-3', '#FFE8E8')
+       st.write(color)
 
     
 #!楽しい   
