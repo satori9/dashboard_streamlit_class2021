@@ -452,6 +452,7 @@ with col5:
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
     st.subheader("あなたの選択した３色")
+if choose_id == '1':    
     col1, col2, col3 = st.columns(3)
 
 with col1:
