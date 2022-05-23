@@ -374,9 +374,7 @@ def color_num(col_sum):
     return '#000000'
   else:
     return '#000000'
-"""
 
-"""
 選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
 df_airashii_count.plot.bar(by=["col_sum", "count"], color=list(map(color_num, "col_sum")), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
 for i in map(color_num, "col_sum"):
