@@ -48,33 +48,8 @@ with st.expander("show data"):
 
         #kwd列とcol_sum列のクロス集計
         df2.pivot_table(index='kwd', columns='col_sum', values='count', aggfunc=np.sum)
-
         
-#streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
-choose_id = st.selectbox("表示するデータを選択して下さい", (
-        "ALL", "1"))
-#choose_id = st.selectbox('Choose ID', df2, help = 'Filter report to show only one')
-
-if choose_id == '1':
-    st.write('1の結果を表示')
-if choose_id == 'ALL':
-    st.write('ALLの結果を表示')
-    
-
-#箱ひげ図で全体の散らばりを見る
-sns.catplot(data=df2, x="col_3a", y="kwd", kind="box",height=10, aspect=1.5, palette="coolwarm")
-st.subheader("1〜156の選択色のキーワードごとの集中度")
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.pyplot()
-st.caption("*縦軸は選択色の番号")
-
-#ヒートマップで全体の散らばりを見る
-sns.displot(data=df2, x="col_3a", y="kwd",height=10, aspect=1.5)
-st.subheader("同様に濃淡で示す")
-st.pyplot()
-
-
-"""
+        """
 -!効いてない
 #選択色番号の色変換データ
 cdf = pd.read_csv('ColorChip156.csv', encoding="cp932")
@@ -400,6 +375,33 @@ def color_num(col_sum):
   else:
     return '#000000'
 """
+
+
+        
+#streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
+choose_id = st.selectbox("表示するデータを選択して下さい", (
+        "ALL", "1"))
+#choose_id = st.selectbox('Choose ID', df2, help = 'Filter report to show only one')
+
+if choose_id == '1':
+    st.write('1の結果を表示')
+if choose_id == 'ALL':
+    st.write('ALLの結果を表示')
+    
+
+#箱ひげ図で全体の散らばりを見る
+sns.catplot(data=df2, x="col_3a", y="kwd", kind="box",height=10, aspect=1.5, palette="coolwarm")
+st.subheader("1〜156の選択色のキーワードごとの集中度")
+st.set_option('deprecation.showPyplotGlobalUse', False)
+st.pyplot()
+st.caption("*縦軸は選択色の番号")
+
+#ヒートマップで全体の散らばりを見る
+sns.displot(data=df2, x="col_3a", y="kwd",height=10, aspect=1.5)
+st.subheader("同様に濃淡で示す")
+st.pyplot()
+
+
 
 #kwd個別に切り出して可視化していく
 #!愛らしい
