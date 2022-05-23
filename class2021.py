@@ -4,9 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-#import japanize_matplotlib
+#import japanize_matplotlib　 -入れてみたが「認識できない」エラーが出る
 
-#日本語文字化け対策でフォント指定
+#日本語文字化け対策でフォント指定　　-！! Web表示すると効かないエラー
 sns.set(font='Yu Gothic')
 plt.rcParams['font.family'] = "Yu Gothic"
 
@@ -50,7 +50,7 @@ with st.expander("show data"):
         df2.pivot_table(index='kwd', columns='col_sum', values='count', aggfunc=np.sum)
 
         
-#streamlitでの表示データのフィルタリング（まだ未装）
+#streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
 choose_id = st.selectbox("表示するデータを選択して下さい", (
         "ALL", "1"))
 #choose_id = st.selectbox('Choose ID', df2, help = 'Filter report to show only one')
@@ -74,6 +74,331 @@ st.subheader("同様に濃淡で示す")
 st.pyplot()
 
 
+# -!効いてない
+#選択色番号の色変換データ
+cdf = pd.read_csv('ColorChip156.csv', encoding="cp932")
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+cdf[["num", "#323200"]]
+
+def color_num(col_sum):
+  if col_sum == 1:
+    return '#FFFFFF'
+  elif col_sum == 2:
+    return '#FFE8E8'
+  elif col_sum == 3:
+    return '#FFF5E7'
+  elif col_sum == 4:
+    return '#FFFAE7'
+  elif col_sum == 5:
+    return '#FFFFE7'
+  elif col_sum == 6:
+    return '#F8FFE7'
+  elif col_sum == 7:
+    return '#E9FFE7'
+  elif col_sum == 8:
+    return '#E7FBFF'
+  elif col_sum == 9:
+    return '#E8F4FF'
+  elif col_sum == 10:
+    return '#E8EAFF'
+  elif col_sum == 11:
+    return '#F6E7FF'
+  elif col_sum == 12:
+    return '#FFE8F6'
+  elif col_sum == 13:
+    return '#FFFFFF'
+  elif col_sum == 14:
+    return '#FFB9B8'
+  elif col_sum == 15:
+    return '#FFD4B7'
+  elif col_sum == 16:
+    return '#FFE2B7'
+  elif col_sum == 17:
+    return '#FFF1B6'
+  elif col_sum == 18:
+    return '#FFFFB5'
+  elif col_sum == 19:
+    return '#EAFFB6'
+  elif col_sum == 20:
+    return '#BDFFB6'
+  elif col_sum == 21:
+    return '#FFE8E8'
+  elif col_sum == 22:
+    return '#B8DEFF'
+  elif col_sum == 23:
+    return '#B9BFFF'
+  elif col_sum == 24:
+    return '#E4B7FF'
+  elif col_sum == 25:
+    return '#FFB8E6'
+  elif col_sum == 26:
+    return '#DBDBDB'
+  elif col_sum == 27:
+    return '#FF8A89'
+  elif col_sum == 28:
+    return '#FFB887'
+  elif col_sum == 29:
+    return '#FFCE86'
+  elif col_sum == 30:
+    return '#FFE785'
+  elif col_sum == 31:
+    return '#FFFF83'
+  elif col_sum == 32:
+    return '#DBFF84'
+  elif col_sum == 33:
+    return '#91FF85'
+  elif col_sum == 34:
+    return '#87EAFF'
+  elif col_sum == 35:
+    return '#88C8FF'
+  elif col_sum == 36:
+    return '#8A94FF'
+  elif col_sum == 37:
+    return '#D287FF'
+  elif col_sum == 38:
+    return '#FF88D5'
+  elif col_sum == 39:
+    return '#B2B2B2'
+  elif col_sum == 40:
+    return '#FF5B59'
+  elif col_sum == 41:
+    return '#FF9B56'
+  elif col_sum == 42:
+    return '#FFB954'
+  elif col_sum == 43:
+    return '#FFDD50'
+  elif col_sum == 44:
+    return '#FFFF4C'
+  elif col_sum == 45:
+    return '#CDFF4E'
+  elif col_sum == 46:
+    return '#63FF51'
+  elif col_sum == 47:
+    return '#55E1FF'
+  elif col_sum == 48:
+    return '#58B1FF'
+  elif col_sum == 49:
+    return '#5B68FF'
+  elif col_sum == 50:
+    return '#BF55FF'
+  elif col_sum == 51:
+    return '#FF58C4'
+  elif col_sum == 52:
+    return '#a6a6a6'
+  elif col_sum == 53:
+    return '#FF2A22'
+  elif col_sum == 54:
+    return '#FF7F1A'
+  elif col_sum == 55:
+    return '#FFA511'
+  elif col_sum == 56:
+    return '#FFD300'
+  elif col_sum == 57:
+    return '#FFFF26'
+  elif col_sum == 58:
+    return '#BEFF00'
+  elif col_sum == 59:
+    return '#2EFF00'
+  elif col_sum == 60:
+    return '#17D9FF'
+  elif col_sum == 61:
+    return '#239CFF'
+  elif col_sum == 62:
+    return '#2A37FF'
+  elif col_sum == 63:
+    return '#AD15FF'
+  elif col_sum == 64:
+    return '#FF21B3'
+  elif col_sum == 65:
+    return '#999999'
+  elif col_sum == 66:
+    return '#FF0000'
+  elif col_sum == 67:
+    return '#FF6100'
+  elif col_sum == 68:
+    return '#FF9000'
+  elif col_sum == 69:
+    return '#FFC900'
+  elif col_sum == 70:
+    return '#FFFF00'
+  elif col_sum == 71:
+    return '#B1FF00'
+  elif col_sum == 72:
+    return '#00FF00'
+  elif col_sum == 73:
+    return '#00CFFF'
+  elif col_sum == 74:
+    return '#0085FF'
+  elif col_sum == 75:
+    return '#0000FF'
+  elif col_sum == 76:
+    return '#9B00FF'
+  elif col_sum == 77:
+    return '#FF00A2'
+  elif col_sum == 78:
+    return '#7F7F7F'
+  elif col_sum == 79:
+    return '#D30000'
+  elif col_sum == 80:
+    return '#D35000'
+  elif col_sum == 81:
+    return '#D37600'
+  elif col_sum == 82:
+    return '#D2A500'
+  elif col_sum == 83:
+    return '#D1D300'
+  elif col_sum == 84:
+    return '#90D300'
+  elif col_sum == 85:
+    return '#00D300'
+  elif col_sum == 86:
+    return '#00A9D3'
+  elif col_sum == 87:
+    return '#006CD4'
+  elif col_sum == 88:
+    return '#0000D5'
+  elif col_sum == 89:
+    return '#7F00D4'
+  elif col_sum == 90:
+    return '#D30085'
+  elif col_sum == 91:
+    return '#656565'
+  elif col_sum == 92:
+    return '#A40000'
+  elif col_sum == 93:
+    return '#A43E00'
+  elif col_sum == 94:
+    return '#FFE8E8'
+  elif col_sum == 94:
+    return '#A35C00'
+  elif col_sum == 95:
+    return '#A38000'
+  elif col_sum == 96:
+    return '#A2A300'
+  elif col_sum == 97:
+    return '#71A300'
+  elif col_sum == 98:
+    return '#00A400'
+  elif col_sum == 99:
+    return '#0084A4'
+  elif col_sum == 100:
+    return '#0055A4'
+  elif col_sum == 101:
+    return '#0000A5'
+  elif col_sum == 102:
+    return '#6300A5'
+  elif col_sum == 103:
+    return '#A40066'
+  elif col_sum == 104:
+    return '#4C4C4C'
+  elif col_sum == 105:
+    return '#750000'
+  elif col_sum == 106:
+    return '#752D00'
+  elif col_sum == 107:
+    return '#754100'
+  elif col_sum == 108:
+    return '#755C00'
+  elif col_sum == 109:
+    return '#747500'
+  elif col_sum == 110:
+    return '#507500'
+  elif col_sum == 111:
+    return '#007500'
+  elif col_sum == 112:
+    return '#005F75'
+  elif col_sum == 113:
+    return '#003C76'
+  elif col_sum == 114:
+    return '#000276'
+  elif col_sum == 115:
+    return '#460076'
+  elif col_sum == 116:
+    return '#750049'
+  elif col_sum == 117:
+    return '#404040'
+  elif col_sum == 118:
+    return '#650000'
+  elif col_sum == 119:
+    return '#651900'
+  elif col_sum == 120:
+    return '#653200'
+  elif col_sum == 121:
+    return '#654c00'
+  elif col_sum == 122:
+    return '#656500'
+  elif col_sum == 123:
+    return '#4c6500'
+  elif col_sum == 124:
+    return '#006500'
+  elif col_sum == 125:
+    return '#004c65'
+  elif col_sum == 126:
+    return '#003265'
+  elif col_sum == 127:
+    return '#000065'
+  elif col_sum == 128:
+    return '#320065'
+  elif col_sum == 129:
+    return '#650032'
+  elif col_sum == 130:
+    return '#323232'
+  elif col_sum == 131:
+    return '#470000'
+  elif col_sum == 132:
+    return '#471B00'
+  elif col_sum == 133:
+    return '#472700'
+  elif col_sum == 134:
+    return '#463700'
+  elif col_sum == 135:
+    return '#464700'
+  elif col_sum == 136:
+    return '#304700'
+  elif col_sum == 137:
+    return '#014700'
+  elif col_sum == 138:
+    return '#003947'
+  elif col_sum == 139:
+    return '#002447'
+  elif col_sum == 140:
+    return '#000347'
+  elif col_sum == 141:
+    return '#2A0047'
+  elif col_sum == 142:
+    return '#47002C'
+  elif col_sum == 143:
+    return '#191919'
+  elif col_sum == 144:
+    return '#320000'
+  elif col_sum == 145:
+    return '#320c00'
+  elif col_sum == 146:
+    return '#321900'
+  elif col_sum == 147:
+    return '#322600'
+  elif col_sum == 148:
+    return '#323200'
+  elif col_sum == 149:
+    return '#263200'
+  elif col_sum == 150:
+    return '#003200'
+  elif col_sum == 151:
+    return '#003232'
+  elif col_sum == 152:
+    return '#002632'
+  elif col_sum == 153:
+    return '#000032'
+  elif col_sum == 154:
+    return '#260032'
+  elif col_sum == 155:
+    return '#320026'
+  elif col_sum == 156:
+    return '#000000'
+  else:
+    return '#000000'
+####
 
 #kwd個別に切り出して可視化していく
 #!愛らしい
@@ -84,6 +409,13 @@ df_airashii_count = df_airashii[['count',"col_sum"]].groupby("col_sum").count()
 
 #選択色を番号順で並べ、選択した数の総計をバーチャートで可視化
 df_airashii_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
+
+#選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
+#df_airashii_count.plot.bar(by=["col_sum", "count"], color=list(map(color_num, "col_sum")), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
+#for i in map(color_num, "col_sum"):
+#    print(i)
+
+
 
 #streamlit表示
 st.header("Q1：愛らしい")
