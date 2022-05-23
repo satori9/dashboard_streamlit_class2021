@@ -376,7 +376,12 @@ def color_num(col_sum):
     return '#000000'
 """
 
-
+"""
+選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
+df_airashii_count.plot.bar(by=["col_sum", "count"], color=list(map(color_num, "col_sum")), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
+for i in map(color_num, "col_sum"):
+    print(i)
+"""
         
 #streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
 choose_id = st.selectbox("表示するデータを選択して下さい", (
@@ -413,12 +418,7 @@ df_airashii_count = df_airashii[['count',"col_sum"]].groupby("col_sum").count()
 #選択色を番号順で並べ、選択した数の総計をバーチャートで可視化
 df_airashii_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
 
-"""
-選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
-df_airashii_count.plot.bar(by=["col_sum", "count"], color=list(map(color_num, "col_sum")), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
-for i in map(color_num, "col_sum"):
-    print(i)
-"""
+
 
 
 #streamlit表示
