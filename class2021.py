@@ -57,7 +57,9 @@ choose_id = st.selectbox("表示するデータを選択して下さい", (
 
 if choose_id == '1':
     st.write('1の結果を表示')
-    else st.write('ALLの結果を表示')
+if choose_id == 'ALL':
+    st.write('ALLの結果を表示')
+    
 
 #箱ひげ図で全体の散らばりを見る
 sns.catplot(data=df2, x="col_3a", y="kwd", kind="box",height=10, aspect=1.5, palette="coolwarm")
