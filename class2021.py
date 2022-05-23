@@ -51,9 +51,12 @@ with st.expander("show data"):
 
         
 #streamlitでの表示データのフィルタリング（まだ未装）
-choose_id = st.selectbox("表示するIDを選択して下さい", (
+choose_id = st.selectbox("表示するデータを選択して下さい", (
         "ALL", "1"))
-#choose_id = st.selectbox('Choose ID', df2, help = 'Filter report to show only one')    
+#choose_id = st.selectbox('Choose ID', df2, help = 'Filter report to show only one')
+
+if activation_function == '1':
+    st.write('1の結果を表示')
 
 #箱ひげ図で全体の散らばりを見る
 sns.catplot(data=df2, x="col_3a", y="kwd", kind="box",height=10, aspect=1.5, palette="coolwarm")
