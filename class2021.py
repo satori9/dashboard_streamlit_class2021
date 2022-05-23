@@ -74,7 +74,8 @@ st.subheader("同様に濃淡で示す")
 st.pyplot()
 
 
-# -!効いてない
+"""
+-!効いてない
 #選択色番号の色変換データ
 cdf = pd.read_csv('ColorChip156.csv', encoding="cp932")
 pd.set_option('display.max_rows', None)
@@ -398,7 +399,7 @@ def color_num(col_sum):
     return '#000000'
   else:
     return '#000000'
-####
+"""
 
 #kwd個別に切り出して可視化していく
 #!愛らしい
@@ -410,11 +411,12 @@ df_airashii_count = df_airashii[['count',"col_sum"]].groupby("col_sum").count()
 #選択色を番号順で並べ、選択した数の総計をバーチャートで可視化
 df_airashii_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
 
-#選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
-#df_airashii_count.plot.bar(by=["col_sum", "count"], color=list(map(color_num, "col_sum")), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
-#for i in map(color_num, "col_sum"):
-#    print(i)
-
+"""
+選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
+df_airashii_count.plot.bar(by=["col_sum", "count"], color=list(map(color_num, "col_sum")), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
+for i in map(color_num, "col_sum"):
+    print(i)
+"""
 
 
 #streamlit表示
