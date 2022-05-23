@@ -55,7 +55,7 @@ choose_id = st.selectbox("表示するデータを選択して下さい", (
         "ALL", "1"))
 #choose_id = st.selectbox('Choose ID', df2, help = 'Filter report to show only one')
 
-if activation_function == '1':
+if choose_id == '1':
     st.write('1の結果を表示')
 
 #箱ひげ図で全体の散らばりを見る
