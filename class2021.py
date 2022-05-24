@@ -1022,7 +1022,7 @@ if choose_id == '1':
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q16-3', '#DBDBDB')
+            color = st.color_picker('Q16-3', '#2A37FF')
             st.write(color)   
             
             
