@@ -762,15 +762,15 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q1-1', '#FFE8F6')
+            color = st.color_picker('Q10-1', '#FFE8F6')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#F6E7FF')
+            color = st.color_picker('Q10_2', '#F6E7FF')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q10-3', '#FF88D5')
             st.write(color)  
           
 #!'hometown'
@@ -873,15 +873,15 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q1-1', '#FFE8F6')
+            color = st.color_picker('Q13-1', '#FFE8F6')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#F6E7FF')
+            color = st.color_picker('Q13_2', '#F6E7FF')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '#FFD4B7')
+            color = st.color_picker('Q13-3', '#FFD4B7')
             st.write(color)      
 
 #!夏(summer)
@@ -920,15 +920,15 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q1-1', '#55E1FF')
+            color = st.color_picker('Q14-1', '#55E1FF')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#FF58C4')
+            color = st.color_picker('Q14_2', '#FF58C4')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '#BF55FF')
+            color = st.color_picker('Q14-3', '#BF55FF')
             st.write(color)      
 
 #!秋(autumn)
@@ -967,15 +967,15 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q1-1', '#D2A500')
+            color = st.color_picker('Q15-1', '#D2A500')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#FFE8E8')
+            color = st.color_picker('Q15_2', '#FFE8E8')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '#750000')
+            color = st.color_picker('Q15-3', '#750000')
             st.write(color)      
 
 #!冬(winter)
@@ -1014,15 +1014,15 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q1-1', '#B8DEFF')
+            color = st.color_picker('Q16-1', '#B8DEFF')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#FFE8E8')
+            color = st.color_picker('Q16_2', '#FFE8E8')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '#DBDBDB')
+            color = st.color_picker('Q16-3', '#DBDBDB')
             st.write(color)   
             
             
@@ -1062,15 +1062,15 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q1-1', '#B8DEFF')
+            color = st.color_picker('Q18-1', '#B8DEFF')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#FFD4B7')
+            color = st.color_picker('Q18_2', '#FFD4B7')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '#FFFFB5')
+            color = st.color_picker('Q18-3', '#FFFFB5')
             st.write(color)       
 
 #!昼(midday)
@@ -1109,15 +1109,15 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q1-1', '#FFFF83')
+            color = st.color_picker('Q18-1', '#FFFF83')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#BDFFB6')
+            color = st.color_picker('Q18_2', '#BDFFB6')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '#55E1FF')
+            color = st.color_picker('Q18-3', '#55E1FF')
             st.write(color)  
     
 #!夕(sunset)
@@ -1156,15 +1156,15 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q1-1', '#FFF0000')
+            color = st.color_picker('Q19-1', '#FFF0000')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#FFA511')
+            color = st.color_picker('Q19_2', '#FFA511')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '##FFFF00')
+            color = st.color_picker('Q19-3', '##FFFF00')
             st.write(color)      
     
 #!夜(night)
@@ -1203,13 +1203,13 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q1-1', '#000000')
+            color = st.color_picker('Q20-1', '#000000')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#000347')
+            color = st.color_picker('Q20_2', '#000347')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '#000276')
+            color = st.color_picker('Q20-3', '#000276')
             st.write(color)    
