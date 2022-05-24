@@ -500,7 +500,9 @@ with col4:
 with col5:
     color = st.color_picker('Q2-5', '#FFA511')
     st.write(color)
+
     
+  
     
 #!(3) 豪華な
 df_goukana = df[df['kwd'] == '(3) 豪華な']
@@ -754,7 +756,22 @@ with col5:
     color = st.color_picker('Q10-5', '#55E1FF')
     st.write(color) 
 
+#1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+if choose_id == '1':
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
+       
+        with col1:
+            color = st.color_picker('Q1-1', '#FFE8F6')
+            st.write(color)
 
+        with col2:
+            color = st.color_picker('Q1_2', '#F6E7FF')
+            st.write(color)
+
+        with col3:
+            color = st.color_picker('Q1-3', '#FF88D5')
+            st.write(color)  
           
 #!'hometown'
 df_hometown = df[df['kwd'] == 'hometown']
@@ -850,7 +867,22 @@ with col5:
     color = st.color_picker('Q13-5', '#BDFFB6')
     st.write(color) 
     
-    
+#1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+if choose_id == '1':
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
+       
+        with col1:
+            color = st.color_picker('Q1-1', '#FFE8F6')
+            st.write(color)
+
+        with col2:
+            color = st.color_picker('Q1_2', '#F6E7FF')
+            st.write(color)
+
+        with col3:
+            color = st.color_picker('Q1-3', '#FFD4B7')
+            st.write(color)      
 
 #!夏(summer)
 df_summer = df[df['kwd'] == '夏(summer)']
@@ -882,7 +914,22 @@ with col5:
     color = st.color_picker('Q14-5', '#FF0000')
     st.write(color) 
     
-    
+ #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+if choose_id == '1':
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
+       
+        with col1:
+            color = st.color_picker('Q1-1', '#55E1FF')
+            st.write(color)
+
+        with col2:
+            color = st.color_picker('Q1_2', '#FF58C4')
+            st.write(color)
+
+        with col3:
+            color = st.color_picker('Q1-3', '#BF55FF')
+            st.write(color)      
 
 #!秋(autumn)
 df_autumn = df[df['kwd'] == '秋(autumn)']
@@ -914,7 +961,22 @@ with col5:
     color = st.color_picker('Q15-5', '#755C00')
     st.write(color) 
      
-    
+ #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+if choose_id == '1':
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
+       
+        with col1:
+            color = st.color_picker('Q1-1', '#D2A500')
+            st.write(color)
+
+        with col2:
+            color = st.color_picker('Q1_2', '#FFE8E8')
+            st.write(color)
+
+        with col3:
+            color = st.color_picker('Q1-3', '#750000')
+            st.write(color)      
 
 #!冬(winter)
 df_winter = df[df['kwd'] == '冬(winter)']
@@ -946,7 +1008,24 @@ with col5:
     color = st.color_picker('Q16-5', '#B7F2FF')
     st.write(color)   
 
+ #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+if choose_id == '1':
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
+       
+        with col1:
+            color = st.color_picker('Q1-1', '#B8DEFF')
+            st.write(color)
 
+        with col2:
+            color = st.color_picker('Q1_2', '#FFE8E8')
+            st.write(color)
+
+        with col3:
+            color = st.color_picker('Q1-3', '#DBDBDB')
+            st.write(color)   
+            
+            
 #!朝(morning)
 df_morning = df[df['kwd'] == '朝(morning)']
 
@@ -977,7 +1056,22 @@ with col5:
     color = st.color_picker('Q17-5', '#FF9B56')
     st.write(color)   
 
-    
+ #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+if choose_id == '1':
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
+       
+        with col1:
+            color = st.color_picker('Q1-1', '#B8DEFF')
+            st.write(color)
+
+        with col2:
+            color = st.color_picker('Q1_2', '#FFD4B7')
+            st.write(color)
+
+        with col3:
+            color = st.color_picker('Q1-3', '#FFFFB5')
+            st.write(color)       
 
 #!昼(midday)
 df_midday = df[df['kwd'] == '昼(midday)']
@@ -1009,7 +1103,22 @@ with col5:
     color = st.color_picker('Q18-5', '#FFFF00')
     st.write(color)   
 
+ #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+if choose_id == '1':
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
+       
+        with col1:
+            color = st.color_picker('Q1-1', '#FFFF83')
+            st.write(color)
 
+        with col2:
+            color = st.color_picker('Q1_2', '#BDFFB6')
+            st.write(color)
+
+        with col3:
+            color = st.color_picker('Q1-3', '#55E1FF')
+            st.write(color)  
     
 #!夕(sunset)
 df_sunset = df[df['kwd'] == '夕(sunset)']
@@ -1041,7 +1150,22 @@ with col5:
     color = st.color_picker('Q19-5', '#FFA511')
     st.write(color) 
 
-    
+ #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+if choose_id == '1':
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
+       
+        with col1:
+            color = st.color_picker('Q1-1', '#FFF0000')
+            st.write(color)
+
+        with col2:
+            color = st.color_picker('Q1_2', '#FFA511')
+            st.write(color)
+
+        with col3:
+            color = st.color_picker('Q1-3', '##FFFF00')
+            st.write(color)      
     
 #!夜(night)
 df_night = df[df['kwd'] == '夜(night)']
@@ -1073,4 +1197,19 @@ with col5:
     color = st.color_picker('Q20-5', '#FFFF00')
     st.write(color) 
 
+#1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+if choose_id == '1':
+        st.subheader("あなたの選択した３色")   
+        col1, col2, col3 = st.columns(3)
+       
+        with col1:
+            color = st.color_picker('Q1-1', '#000000')
+            st.write(color)
 
+        with col2:
+            color = st.color_picker('Q1_2', '#000347')
+            st.write(color)
+
+        with col3:
+            color = st.color_picker('Q1-3', '#000276')
+            st.write(color)    
