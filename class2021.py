@@ -1156,7 +1156,7 @@ if choose_id == '1':
         col1, col2, col3 = st.columns(3)
        
         with col1:
-            color = st.color_picker('Q19-1', '#FFF0000')
+            color = st.color_picker('Q19-1', '#FF0000')
             st.write(color)
 
         with col2:
