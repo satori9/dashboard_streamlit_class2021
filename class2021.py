@@ -1164,7 +1164,7 @@ if choose_id == '1':
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q19-3', '##FFFF00')
+            color = st.color_picker('Q19-3', '#FFFF00')
             st.write(color)      
     
 #!夜(night)
