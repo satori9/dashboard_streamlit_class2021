@@ -51,28 +51,29 @@ with st.expander("show data"):
 
 
 
+    """
+    -!効いてない
+    #カラーチップの番号が一致した色コードを参照して返す
+    def col_num(d_col):
+        if 'num' in d_col == 'col_sum' in df:
+            return '#col' in d_col
+        else:
+            return #000000
+
+
+    選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
+    df_airashii_count.plot.bar(by=["col_sum", "count"], color=dict(map(col_num, 'col_sum')), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
+    for i in map(col_num, 'col_sum'):
+        print(i)
+
+    """
+
+
+
         
 #カラーチップのデータを読み込み辞書変換
 cdf = pd.read_csv('ColorChip156.csv')
 d_col = dict(zip(cdf['num'], cdf['#col']))
-       
-"""
--!効いてない
-#カラーチップの番号が一致した色コードを参照して返す
-def col_num(d_col):
-    if 'num' in d_col == 'col_sum' in df:
-        return '#col' in d_col
-    else:
-        return #000000
-
-
-選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
-df_airashii_count.plot.bar(by=["col_sum", "count"], color=dict(map(col_num, 'col_sum')), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
-for i in map(col_num, 'col_sum'):
-    print(i)
-　　　　
-"""
-
         
 #カラーチップを表示        
 st.image("color_chip156.jpeg", caption='色彩コード変換表(dummy)')
