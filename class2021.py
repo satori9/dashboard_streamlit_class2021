@@ -50,8 +50,9 @@ with st.expander("show data"):
         df2.pivot_table(index='kwd', columns='col_sum', values='count', aggfunc=np.sum)
 
         
-image = Image.open('color_chip156..jpg')
-st.image(image, caption='色彩コード変換表')
+#カラーチップを表示        
+image = Image.open('Color_Chip156..jpg')
+st.image(image, caption='色彩コード変換表(dummy)')
 streamlit run image.py
         
 #カラーチップのデータを読み込み辞書変換
