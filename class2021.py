@@ -53,7 +53,7 @@ with st.expander("show data"):
 #カラーチップを表示        
 image = Image.open('Color_Chip156..jpg')
 st.image(image, caption='色彩コード変換表(dummy)')
-streamlit run image.py
+
         
 #カラーチップのデータを読み込み辞書変換
 cdf = pd.read_csv('ColorChip156.csv')
