@@ -51,7 +51,7 @@ with st.expander("show data"):
 
         
 #カラーチップを表示        
-st.image('ColorChip156.jpg', caption='色彩コード変換表(dummy)')
+st.image("ColorChip156.csv", caption='色彩コード変換表(dummy)')
 
         
 #カラーチップのデータを読み込み辞書変換
