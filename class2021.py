@@ -48,12 +48,17 @@ with st.expander("show data"):
 
         #kwd列とcol_sum列のクロス集計
         df2.pivot_table(index='kwd', columns='col_sum', values='count', aggfunc=np.sum)
+
+        
+image = Image.open('color_chip156..jpg')
+st.image(image, caption='色彩コード変換表')
+streamlit run image.py
         
 #カラーチップのデータを読み込み辞書変換
 cdf = pd.read_csv('ColorChip156.csv')
 d_col = dict(zip(cdf['num'], cdf['#col']))
        
-    """
+"""
 -!効いてない
 #カラーチップの番号が一致した色コードを参照して返す
 def col_num(d_col):
@@ -68,7 +73,7 @@ df_airashii_count.plot.bar(by=["col_sum", "count"], color=dict(map(col_num, 'col
 for i in map(col_num, 'col_sum'):
     print(i)
 　　　　
-    """
+"""
         
 #streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
 choose_id = st.selectbox("表示するデータを選択して下さい", (
