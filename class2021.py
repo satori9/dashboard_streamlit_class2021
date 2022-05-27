@@ -68,17 +68,6 @@ with st.expander("show data"):
 
     """
 
-
-
-        
-#カラーチップのデータを読み込み辞書変換
-cdf = pd.read_csv('ColorChip156.csv')
-d_col = dict(zip(cdf['num'], cdf['#col']))
-        
-#カラーチップを表示        
-st.image("color_chip156.jpeg", caption='色彩コード変換表(dummy)')
-
-
 #streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
 choose_id = st.selectbox("表示するデータを選択して下さい", (
         "ALL", "1"))
@@ -88,6 +77,14 @@ if choose_id == '1':
     st.write('1の結果を表示')
 if choose_id == 'ALL':
     st.write('ALLの結果を表示')
+
+        
+#カラーチップのデータを読み込み辞書変換
+cdf = pd.read_csv('ColorChip156.csv')
+d_col = dict(zip(cdf['num'], cdf['#col']))
+        
+#カラーチップを表示        
+st.image("color_chip156.jpeg", caption='色彩コード変換表(dummy)')
     
 
 #箱ひげ図で全体の散らばりを見る
