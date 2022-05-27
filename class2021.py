@@ -49,9 +49,7 @@ with st.expander("show data"):
         #kwd列とcol_sum列のクロス集計
         df2.pivot_table(index='kwd', columns='col_sum', values='count', aggfunc=np.sum)
 
-        
-#カラーチップを表示        
-st.image("color_chip156.jpeg", caption='色彩コード変換表(dummy)')
+
 
         
 #カラーチップのデータを読み込み辞書変換
@@ -74,7 +72,12 @@ for i in map(col_num, 'col_sum'):
     print(i)
 　　　　
 """
+
         
+#カラーチップを表示        
+st.image("color_chip156.jpeg", caption='色彩コード変換表(dummy)')
+
+
 #streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
 choose_id = st.selectbox("表示するデータを選択して下さい", (
         "ALL", "1"))
