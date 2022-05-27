@@ -584,7 +584,7 @@ if choose_id == '1':
 #!夏(summer)
 df_summer = df[df['kwd'] == '夏(summer)']
 
-df_summer_count = df_spring[['count',"col_sum"]].groupby("col_sum").count()
+df_summer_count = df_summer[['count',"col_sum"]].groupby("col_sum").count()
 
 df_summer_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
 
