@@ -6,7 +6,7 @@ import seaborn as sns
 import streamlit as st
 import japanize_matplotlib
 
-def ():
+def app():
     st.title("Result")
 
     #日本語文字化け対策でフォント指定　　-！! Web表示すると効かないエラー
