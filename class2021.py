@@ -23,51 +23,48 @@ def app():
 
     #下準備データ -ひとまずexpanderでラッピング。本来は非表示にしたい。
     with st.expander("show data"):
-    with st.form(key='data', clear_on_submit=True):
+        with st.form(key='data', clear_on_submit=True):
 
-        #クロス集計の準備：col_sum列のカンマ区切りのデータを分割
-        kwd = df['kwd'].map(lambda x: x.split(','))
-        #numpy.arrayにして二次元から一次元のデータに変換
-        ser = pd.Series(np.hstack(kwd.values))
-        #ユニークにする
-        unique_kwd = ser.str.strip().unique()
-        unique_kwd.sort()
-        unique_kwd
+            #クロス集計の準備：col_sum列のカンマ区切りのデータを分割
+            kwd = df['kwd'].map(lambda x: x.split(','))
+            #numpy.arrayにして二次元から一次元のデータに変換
+            ser = pd.Series(np.hstack(kwd.values))
+            #ユニークにする
+            unique_kwd = ser.str.strip().unique()
+            unique_kwd.sort()
+            unique_kwd
 
-        #指定したkwdをDataframeから抽出
-        def filter_df_by_kwd(df, kwd):
-            kwd_df = df.loc[df['kwd'].map(lambda x: kwd in x)].copy()
-            kwd_df['kwd'] = kwd
-            return kwd_df
+            #指定したkwdをDataframeから抽出
+            def filter_df_by_kwd(df, kwd):
+                kwd_df = df.loc[df['kwd'].map(lambda x: kwd in x)].copy()
+                kwd_df['kwd'] = kwd
+                return kwd_df
 
-        #上記の関数を全てのkwdに対して実行
-        kwd_df_list = [filter_df_by_kwd(df, kwd) for kwd in unique_kwd]
-        #上記dataを統合
-        df2 = pd.concat(kwd_df_list)
-        #col_sum列でソート
-        df2.sort_values('col_sum', inplace=True)
+            #上記の関数を全てのkwdに対して実行
+            kwd_df_list = [filter_df_by_kwd(df, kwd) for kwd in unique_kwd]
+            #上記dataを統合
+            df2 = pd.concat(kwd_df_list)
+            #col_sum列でソート
+            df2.sort_values('col_sum', inplace=True)
 
-        #kwd列とcol_sum列のクロス集計
-        df2.pivot_table(index='kwd', columns='col_sum', values='count', aggfunc=np.sum)
+            #kwd列とcol_sum列のクロス集計
+            df2.pivot_table(index='kwd', columns='col_sum', values='count', aggfunc=np.sum)
 
+        """
+        -!効いてない
+        #カラーチップの番号が一致した色コードを参照して返す
+        def col_num(d_col):
+            if 'num' in d_col == 'col_sum' in df:
+                return '#col' in d_col
+            else:
+                return #000000
 
-
-    """
-    -!効いてない
-    #カラーチップの番号が一致した色コードを参照して返す
-    def col_num(d_col):
-        if 'num' in d_col == 'col_sum' in df:
-            return '#col' in d_col
-        else:
-            return #000000
-
-
-    選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
-    df_airashii_count.plot.bar(by=["col_sum", "count"], color=dict(map(col_num, 'col_sum')), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
-    for i in map(col_num, 'col_sum'):
+        選択色を番号順で並べ、選択した数の総計をバーチャートで可視化 -!全部黒になってしまうエラー中
+        df_airashii_count.plot.bar(by=["col_sum", "count"], color=dict(map(col_num, 'col_sum')), xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
+        for i in map(col_num, 'col_sum'):
         print(i)
 
-    """
+       """
 
     #カラーチップのデータを読み込み辞書変換
     cdf = pd.read_csv('ColorChip156.csv')
