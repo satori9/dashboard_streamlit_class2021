@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-#import japanize_matplotlib　 -入れてみたが「認識できない」エラーが出る
+import japanize_matplotlib　 
 
 def ():
     st.title("Result")
