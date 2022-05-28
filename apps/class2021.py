@@ -7,6 +7,7 @@ import streamlit as st
 #import japanize_matplotlib　 -入れてみたが「認識できない」エラーが出る
 
 def app():
+    st.title("Result")
 
     #日本語文字化け対策でフォント指定　　-！! Web表示すると効かないエラー
     sns.set(font='Yu Gothic')
