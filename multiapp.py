@@ -1,9 +1,19 @@
-import class2021
-import all2021
-from multiapp import MultiApp
+import streamlit as st
 
+class MultiApp:
+    def __init__(self):
+        self.apps = []
 
-app = MultiApp()
-app.add_app("Result", class2021)
-app.add_app("Analysis", all2021)
-app.run()
+    def add_app(self, title, func):
+        self.apps.append({
+            "title": title,
+            "function": func
+        })
+
+    def run(self):
+        app = st.sidebar.radio(
+            'Go To',
+            self.apps,
+            format_func=lambda app: app['title'])
+
+        app['function']()
