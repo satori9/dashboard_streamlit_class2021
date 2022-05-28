@@ -113,9 +113,6 @@ def app():
     #選択色を番号順で並べ、選択した数の総計をバーチャートで可視化
     df_airashii_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
 
-
-
-
     #streamlit表示
     st.header("Q1：愛らしい")
     st.bar_chart(df_airashii_count)
