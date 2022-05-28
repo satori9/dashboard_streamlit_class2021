@@ -6,7 +6,7 @@ import seaborn as sns
 import streamlit as st
 #import japanize_matplotlib　 -入れてみたが「認識できない」エラーが出る
 
-def app():
+def class2021():
     st.title("Result")
 
     #日本語文字化け対策でフォント指定　　-！! Web表示すると効かないエラー
