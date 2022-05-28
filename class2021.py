@@ -1,12 +1,12 @@
-def app():
-    import os
-    import pandas as pd
-    import numpy as np
-    import matplotlib.pyplot as plt
-    import seaborn as sns
-    import streamlit as st
-    #import japanize_matplotlib　 -入れてみたが「認識できない」エラーが出る
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import streamlit as st
+#import japanize_matplotlib　 -入れてみたが「認識できない」エラーが出る
 
+def app():
     #日本語文字化け対策でフォント指定　　-！! Web表示すると効かないエラー
     sns.set(font='Yu Gothic')
     plt.rcParams['font.family'] = "Yu Gothic"
