@@ -4,8 +4,11 @@ import class2021
 import all2021
 
 
-
-app = MultiApp()
-app.add_app("Result", class2021.app)
-app.add_app("Analysis", all2021.app)
-app.run()
+PAGES = {
+    "Result": class2021,
+    "Analysis": all2021
+}
+st.sidebar.title('Navigation')
+selection = st.sidebar.radio("Go to", list(PAGES.keys()))
+page = PAGES[selection]
+page.app()
