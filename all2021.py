@@ -1,4 +1,4 @@
 import streamlit as st
 
-def():
+def ():
   st.title("analysis")
