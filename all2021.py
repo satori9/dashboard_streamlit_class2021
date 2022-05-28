@@ -9,27 +9,29 @@ import streamlit as st
 sns.set(font='Hiragino Sans')
 plt.rcParams['font.family'] = "Hiragino Sans"
 
-st.title("analysis")
+def app():
 
-#トップ選択色時に一緒に選択された第二、第三選択色の数をkwdごとにカウントした表
-cdf = pd.read_csv("col3.csv")
-#データ型を確認
-cdf.dtypes
-#　欠損値の確認
-cdf.isnull().any()
-cdf.isnull().sum()
-#欠損値を削除（nation, countryのデータ)
-cdf = cdf.dropna()
+  st.title("analysis")
 
-#kwd個別に切り出して可視化していく
-cdf_airashii = cdf[cdf['kwd'] == '愛らしい']
-#cdf_airashii
+  #トップ選択色時に一緒に選択された第二、第三選択色の数をkwdごとにカウントした表
+  cdf = pd.read_csv("col3.csv")
+  #データ型を確認
+  cdf.dtypes
+  #　欠損値の確認
+  cdf.isnull().any()
+  cdf.isnull().sum()
+  #欠損値を削除（nation, countryのデータ)
+  cdf = cdf.dropna()
 
-#col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
-plt.scatter(cdf_airashii['col_3a'], cdf_airashii['col_3b'], label='col_3b', color='blue')
-plt.scatter(cdf_airashii['col_3a'], cdf_airashii['col_3c'], label='col_3c', color='green')
-plt.xlabel('col_3a')
-plt.ylabel("col_3b & col_3c")
-plt.legend()
-plt.show()
+  #kwd個別に切り出して可視化していく
+  cdf_airashii = cdf[cdf['kwd'] == '愛らしい']
+  #cdf_airashii
+
+  #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
+  plt.scatter(cdf_airashii['col_3a'], cdf_airashii['col_3b'], label='col_3b', color='blue')
+  plt.scatter(cdf_airashii['col_3a'], cdf_airashii['col_3c'], label='col_3c', color='green')
+  plt.xlabel('col_3a')
+  plt.ylabel("col_3b & col_3c")
+  plt.legend()
+  plt.show()
 
