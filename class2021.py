@@ -80,9 +80,9 @@ def app():
         #choose_id = st.selectbox('Choose ID', df2, help = 'Filter report to show only one')
 
         if choose_id == '1':
-        st.write('1の結果を表示')
+            st.write('1の結果を表示')
         if choose_id == 'ALL':
-        st.write('ALLの結果を表示')
+            st.write('ALLの結果を表示')
 
 
 
