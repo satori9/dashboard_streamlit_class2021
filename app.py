@@ -2,15 +2,11 @@ import streamlit as st
 from multiapp import MultiApp
 from apps import (class2021, all2021,)
 
-st.set_page_config(layout="wide")
-
-
-apps = MultiApp()
-
-# Add all your application here
-
-apps.add_app("Home", class2021.app)
-apps.add_app("Analysis", all2021.app)
-
-# The main app
-apps.run()
+PAGES = {
+    "Result": class2021,
+    "Analysis": all2021
+}
+st.sidebar.title('Navigation')
+selection = st.sidebar.radio("Go to", list(PAGES.keys()))
+page = PAGES[selection]
+page.app()
