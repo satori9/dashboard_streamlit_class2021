@@ -22,7 +22,7 @@ df['col_sum'] = df['col_sum'].fillna(0).astype('int64')
 
 #下準備データ -ひとまずexpanderでラッピング。本来は非表示にしたい。
 with st.expander("show data"):
-with st.form(key='data', clear_on_submit=True):
+    with st.form(key='data', clear_on_submit=True):
 
     #クロス集計の準備：col_sum列のカンマ区切りのデータを分割
     kwd = df['kwd'].map(lambda x: x.split(','))
