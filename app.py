@@ -1,6 +1,6 @@
 import streamlit as st
 from multiapp import MultiApp
-import (
+from apps import (
     class2021,
     all2021,
 )
