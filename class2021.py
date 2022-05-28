@@ -122,24 +122,24 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q1-1', '#FFB8E6')
-st.write(color)
+    color = st.color_picker('Q1-1', '#FFB8E6')
+    st.write(color)
 
 with col2:
-color = st.color_picker('Q1-2', '#FFE8F6')
-st.write(color)
+    color = st.color_picker('Q1-2', '#FFE8F6')
+    st.write(color)
 
 with col3:
-color = st.color_picker('Q1-3', '#FF88D5')
-st.write(color)
+    color = st.color_picker('Q1-3', '#FF88D5')
+    st.write(color)
 
 with col4:
-color = st.color_picker('Q1-4', '#FFB9B8')
-st.write(color)
+    color = st.color_picker('Q1-4', '#FFB9B8')
+    st.write(color)
 
 with col5:
-color = st.color_picker('Q1-5', '#FF58C4')
-st.write(color)
+    color = st.color_picker('Q1-5', '#FF58C4')
+    st.write(color)
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
@@ -176,24 +176,24 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q2-1', '#FFFF26')
-st.write(color)
+    color = st.color_picker('Q2-1', '#FFFF26')
+    st.write(color)
 
 with col2:
-color = st.color_picker('Q2-2', '#FFFF00')
-st.write(color)
+    color = st.color_picker('Q2-2', '#FFFF00')
+    st.write(color)
 
 with col3:
-color = st.color_picker('Q2-3', '#FF6100')
-st.write(color)
+    color = st.color_picker('Q2-3', '#FF6100')
+    st.write(color)
 
 with col4:
-color = st.color_picker('Q2-4', '#FFB954')
-st.write(color)
+    color = st.color_picker('Q2-4', '#FFB954')
+    st.write(color)
 
 with col5:
-color = st.color_picker('Q2-5', '#FFA511')
-st.write(color)
+    color = st.color_picker('Q2-5', '#FFA511')
+    st.write(color)
 
 
 
@@ -213,20 +213,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q3-1', '#FF0000')
-st.write(color)
+    color = st.color_picker('Q3-1', '#FF0000')
+    st.write(color)
 with col2:
-color = st.color_picker('Q3-2', '#FFFF00')
-st.write(color)
+    color = st.color_picker('Q3-2', '#FFFF00')
+    st.write(color)
 with col3:
-color = st.color_picker('Q3-3', '#FF00A2')
-st.write(color)
+    color = st.color_picker('Q3-3', '#FF00A2')
+    st.write(color)
 with col4:
-color = st.color_picker('Q3-4', '#000000')
-st.write(color)
+    color = st.color_picker('Q3-4', '#000000')
+    st.write(color)
 with col5:
-color = st.color_picker('Q3-5', '#FFFF26')
-st.write(color)
+    color = st.color_picker('Q3-5', '#FFFF26')
+    st.write(color)
 
 
 
@@ -245,20 +245,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q4-1', '#DBDBDB')
-st.write(color)
+    color = st.color_picker('Q4-1', '#DBDBDB')
+    st.write(color)
 with col2:
-color = st.color_picker('Q4-2', '#463700')
-st.write(color)
+    color = st.color_picker('Q4-2', '#463700')
+    st.write(color)
 with col3:
-color = st.color_picker('Q4-3', '#FFF1E7')
-st.write(color)
+    color = st.color_picker('Q4-3', '#FFF1E7')
+    st.write(color)
 with col4:
-color = st.color_picker('Q4-4', '#FFFFFF')
-st.write(color)
+    color = st.color_picker('Q4-4', '#FFFFFF')
+    st.write(color)
 with col5:
-color = st.color_picker('Q4-5', '#656565')
-st.write(color)
+    color = st.color_picker('Q4-5', '#656565')
+    st.write(color)
 
 
 
@@ -277,20 +277,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q5-1', '#656565')
-st.write(color)
+    color = st.color_picker('Q5-1', '#656565')
+    st.write(color)
 with col2:
-color = st.color_picker('Q5-2', '#A2A300')
-st.write(color)
+    color = st.color_picker('Q5-2', '#A2A300')
+    st.write(color)
 with col3:
-color = st.color_picker('Q5-3', '#D35000')
-st.write(color)
+    color = st.color_picker('Q5-3', '#D35000')
+    st.write(color)
 with col4:
-color = st.color_picker('Q5-4', '#650000')
-st.write(color)
+    color = st.color_picker('Q5-4', '#650000')
+    st.write(color)
 with col5:
-color = st.color_picker('Q5-5', '#003232')
-st.write(color)
+    color = st.color_picker('Q5-5', '#003232')
+    st.write(color)
 
 
 #!(6) 格調のある
@@ -308,20 +308,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q6-1', '#FFFF00')
-st.write(color)
+    color = st.color_picker('Q6-1', '#FFFF00')
+    st.write(color)
 with col2:
-color = st.color_picker('Q6-2', '#D1D300')
-st.write(color)
+    color = st.color_picker('Q6-2', '#D1D300')
+    st.write(color)
 with col3:
-color = st.color_picker('Q6-3', '#650000')
-st.write(color)
+    color = st.color_picker('Q6-3', '#650000')
+    st.write(color)
 with col4:
-color = st.color_picker('Q6-4', '#A40000')
-st.write(color)
+    color = st.color_picker('Q6-4', '#A40000')
+    st.write(color)
 with col5:
-color = st.color_picker('Q6-5', '#D30000')
-st.write(color)
+    color = st.color_picker('Q6-5', '#D30000')
+    st.write(color)
 
 
 
@@ -340,20 +340,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q7-1', '#A40066')
-st.write(color)
+    color = st.color_picker('Q7-1', '#A40066')
+    st.write(color)
 with col2:
-color = st.color_picker('Q7-2', '#FFFFFF')
-st.write(color)
+    color = st.color_picker('Q7-2', '#FFFFFF')
+    st.write(color)
 with col3:
-color = st.color_picker('Q7-3', '#E4B7FF')
-st.write(color)
+    color = st.color_picker('Q7-3', '#E4B7FF')
+    st.write(color)
 with col4:
-color = st.color_picker('Q7-4', '#87EAFF')
-st.write(color)
+    color = st.color_picker('Q7-4', '#87EAFF')
+    st.write(color)
 with col5:
-color = st.color_picker('Q7-5', '#750000')
-st.write(color)
+    color = st.color_picker('Q7-5', '#750000')
+    st.write(color)
 
 
 
@@ -372,20 +372,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q8-1', '#FFFFFF')
-st.write(color)
+    color = st.color_picker('Q8-1', '#FFFFFF')
+    st.write(color)
 with col2:
-color = st.color_picker('Q8-2', '#750049')
-st.write(color)
+    color = st.color_picker('Q8-2', '#750049')
+    st.write(color)
 with col3:
-color = st.color_picker('Q8-3', '#460076')
-st.write(color)
+    color = st.color_picker('Q8-3', '#460076')
+    st.write(color)
 with col4:
-color = st.color_picker('Q8-4', '#BF55FF')
-st.write(color)
+    color = st.color_picker('Q8-4', '#BF55FF')
+    st.write(color)
 with col5:
-color = st.color_picker('Q8-5', '#000000')
-st.write(color)    
+    color = st.color_picker('Q8-5', '#000000')
+    st.write(color)    
 
 
 #!(9) 合理的な
@@ -403,20 +403,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q9-1', '#0000D5')
-st.write(color)
+    color = st.color_picker('Q9-1', '#0000D5')
+    st.write(color)
 with col2:
-color = st.color_picker('Q9-2', '#000000')
-st.write(color)
+    color = st.color_picker('Q9-2', '#000000')
+    st.write(color)
 with col3:
-color = st.color_picker('Q9-3', '#FF2A22')
-st.write(color)
+    color = st.color_picker('Q9-3', '#FF2A22')
+    st.write(color)
 with col4:
-color = st.color_picker('Q9-4', '#FFFFFF')
-st.write(color)
+    color = st.color_picker('Q9-4', '#FFFFFF')
+    st.write(color)
 with col5:
-color = st.color_picker('Q9-5', '#FFFF00')
-st.write(color)    
+    color = st.color_picker('Q9-5', '#FFFF00')
+    st.write(color)    
 
 
 
@@ -435,20 +435,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q10-1', '#FFB8E6')
-st.write(color)
+    color = st.color_picker('Q10-1', '#FFB8E6')
+    st.write(color)
 with col2:
-color = st.color_picker('Q10-2', '#FFFFFF')
-st.write(color)
+    color = st.color_picker('Q10-2', '#FFFFFF')
+    st.write(color)
 with col3:
-color = st.color_picker('Q10-3', '#000000')
-st.write(color)
+    color = st.color_picker('Q10-3', '#000000')
+    st.write(color)
 with col4:
-color = st.color_picker('Q10-4', '#E4B7FF')
-st.write(color)
+    color = st.color_picker('Q10-4', '#E4B7FF')
+    st.write(color)
 with col5:
-color = st.color_picker('Q10-5', '#55E1FF')
-st.write(color) 
+    color = st.color_picker('Q10-5', '#55E1FF')
+    st.write(color) 
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
@@ -482,20 +482,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q11-1', '#007500')
-st.write(color)
+    color = st.color_picker('Q11-1', '#007500')
+    st.write(color)
 with col2:
-color = st.color_picker('Q11-2', '#00A400')
-st.write(color)
+    color = st.color_picker('Q11-2', '#00A400')
+    st.write(color)
 with col3:
-color = st.color_picker('Q11-3', '#00A400')
-st.write(color)
+    color = st.color_picker('Q11-3', '#00A400')
+    st.write(color)
 with col4:
-color = st.color_picker('Q11-4', '#D30000')
-st.write(color)
+    color = st.color_picker('Q11-4', '#D30000')
+    st.write(color)
 with col5:
-color = st.color_picker('Q11-5', '#91FF85')
-st.write(color) 
+    color = st.color_picker('Q11-5', '#91FF85')
+    st.write(color) 
 
 
 
@@ -514,20 +514,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q12-1', '#FF0000')
-st.write(color)
+    color = st.color_picker('Q12-1', '#FF0000')
+    st.write(color)
 with col2:
-color = st.color_picker('Q12-2', '#FFFFFF')
-st.write(color)
+    color = st.color_picker('Q12-2', '#FFFFFF')
+    st.write(color)
 with col3:
-color = st.color_picker('Q12-3', '#D30000')
-st.write(color)
+    color = st.color_picker('Q12-3', '#D30000')
+    st.write(color)
 with col4:
-color = st.color_picker('Q12-4', '#A40000')
-st.write(color)
+    color = st.color_picker('Q12-4', '#A40000')
+    st.write(color)
 with col5:
-color = st.color_picker('Q12-5', '#FF88D5')
-st.write(color) 
+    color = st.color_picker('Q12-5', '#FF88D5')
+    st.write(color) 
 
 
 
@@ -546,20 +546,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q13-1', '#FFB8E6')
-st.write(color)
+    color = st.color_picker('Q13-1', '#FFB8E6')
+    st.write(color)
 with col2:
-color = st.color_picker('Q13-2', '#FFE8F6')
-st.write(color)
+    color = st.color_picker('Q13-2', '#FFE8F6')
+    st.write(color)
 with col3:
-color = st.color_picker('Q13-3', '#FFFFB5')
-st.write(color)
+    color = st.color_picker('Q13-3', '#FFFFB5')
+    st.write(color)
 with col4:
-color = st.color_picker('Q13-4', '#FFB9B8')
-st.write(color)
+    color = st.color_picker('Q13-4', '#FFB9B8')
+    st.write(color)
 with col5:
-color = st.color_picker('Q13-5', '#BDFFB6')
-st.write(color) 
+    color = st.color_picker('Q13-5', '#BDFFB6')
+    st.write(color) 
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
@@ -593,20 +593,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q14-1', '#FFFF00')
-st.write(color)
+    color = st.color_picker('Q14-1', '#FFFF00')
+    st.write(color)
 with col2:
-color = st.color_picker('Q14-2', '#00CFFF')
-st.write(color)
+    color = st.color_picker('Q14-2', '#00CFFF')
+    st.write(color)
 with col3:
-color = st.color_picker('Q14-3', '#17D9FF')
-st.write(color)
+    color = st.color_picker('Q14-3', '#17D9FF')
+    st.write(color)
 with col4:
-color = st.color_picker('Q14-4', '#55E1FF')
-st.write(color)
+    color = st.color_picker('Q14-4', '#55E1FF')
+    st.write(color)
 with col5:
-color = st.color_picker('Q14-5', '#FF0000')
-st.write(color) 
+    color = st.color_picker('Q14-5', '#FF0000')
+    st.write(color) 
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
@@ -640,20 +640,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q15-1', '#A35C00')
-st.write(color)
+    color = st.color_picker('Q15-1', '#A35C00')
+    st.write(color)
 with col2:
-color = st.color_picker('Q15-2', '#D37600')
-st.write(color)
+    color = st.color_picker('Q15-2', '#D37600')
+    st.write(color)
 with col3:
-color = st.color_picker('Q15-3', '#A43E00')
-st.write(color)
+    color = st.color_picker('Q15-3', '#A43E00')
+    st.write(color)
 with col4:
-color = st.color_picker('Q15-4', '#750000')
-st.write(color)
+    color = st.color_picker('Q15-4', '#750000')
+    st.write(color)
 with col5:
-color = st.color_picker('Q15-5', '#755C00')
-st.write(color) 
+    color = st.color_picker('Q15-5', '#755C00')
+    st.write(color) 
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
@@ -687,20 +687,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q16-1', '#FFFFFF')
-st.write(color)
+    color = st.color_picker('Q16-1', '#FFFFFF')
+    st.write(color)
 with col2:
-color = st.color_picker('Q16-2', '#0055A4')
-st.write(color)
+    color = st.color_picker('Q16-2', '#0055A4')
+    st.write(color)
 with col3:
-color = st.color_picker('Q16-3', '#DBDBDB')
-st.write(color)
+    color = st.color_picker('Q16-3', '#DBDBDB')
+    st.write(color)
 with col4:
-color = st.color_picker('Q16-4', '#000347')
-st.write(color)
+    color = st.color_picker('Q16-4', '#000347')
+    st.write(color)
 with col5:
-color = st.color_picker('Q16-5', '#B7F2FF')
-st.write(color)   
+    color = st.color_picker('Q16-5', '#B7F2FF')
+    st.write(color)   
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
@@ -735,20 +735,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q17-1', '#B7F2FF')
-st.write(color)
+    color = st.color_picker('Q17-1', '#B7F2FF')
+    st.write(color)
 with col2:
-color = st.color_picker('Q17-2', '#E7FBFF')
-st.write(color)
+    color = st.color_picker('Q17-2', '#E7FBFF')
+    st.write(color)
 with col3:
-color = st.color_picker('Q17-3', '#FFFFB5')
-st.write(color)
+    color = st.color_picker('Q17-3', '#FFFFB5')
+    st.write(color)
 with col4:
-color = st.color_picker('Q17-4', '#FF2A22')
-st.write(color)
+    color = st.color_picker('Q17-4', '#FF2A22')
+    st.write(color)
 with col5:
-color = st.color_picker('Q17-5', '#FF9B56')
-st.write(color)   
+    color = st.color_picker('Q17-5', '#FF9B56')
+    st.write(color)   
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
@@ -782,20 +782,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q18-1', '#FF9000')
-st.write(color)
+    color = st.color_picker('Q18-1', '#FF9000')
+    st.write(color)
 with col2:
-color = st.color_picker('Q18-2', '#FFFF83')
-st.write(color)
+    color = st.color_picker('Q18-2', '#FFFF83')
+    st.write(color)
 with col3:
-color = st.color_picker('Q18-3', '#FF7F1A')
-st.write(color)
+    color = st.color_picker('Q18-3', '#FF7F1A')
+    st.write(color)
 with col4:
-color = st.color_picker('Q18-4', '#FF6100')
-st.write(color)
+    color = st.color_picker('Q18-4', '#FF6100')
+    st.write(color)
 with col5:
-color = st.color_picker('Q18-5', '#FFFF00')
-st.write(color)   
+    color = st.color_picker('Q18-5', '#FFFF00')
+    st.write(color)   
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
@@ -829,20 +829,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q19-1', '#FF6100')
-st.write(color)
+    color = st.color_picker('Q19-1', '#FF6100')
+    st.write(color)
 with col2:
-color = st.color_picker('Q19-2', '#D35000')
-st.write(color)
+    color = st.color_picker('Q19-2', '#D35000')
+    st.write(color)
 with col3:
-color = st.color_picker('Q19-3', '#FF9000')
-st.write(color)
+    color = st.color_picker('Q19-3', '#FF9000')
+    st.write(color)
 with col4:
-color = st.color_picker('Q19-4', '#D37600')
-st.write(color)
+    color = st.color_picker('Q19-4', '#D37600')
+    st.write(color)
 with col5:
-color = st.color_picker('Q19-5', '#FFA511')
-st.write(color) 
+    color = st.color_picker('Q19-5', '#FFA511')
+    st.write(color) 
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
@@ -876,20 +876,20 @@ st.subheader("選択色トップ5")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-color = st.color_picker('Q20-1', '#000000')
-st.write(color)
+    color = st.color_picker('Q20-1', '#000000')
+    st.write(color)
 with col2:
-color = st.color_picker('Q20-2', '#000347')
-st.write(color)
+    color = st.color_picker('Q20-2', '#000347')
+    st.write(color)
 with col3:
-color = st.color_picker('Q20-3', '#000032')
-st.write(color)
+    color = st.color_picker('Q20-3', '#000032')
+    st.write(color)
 with col4:
-color = st.color_picker('Q20-4', '#000276')
-st.write(color)
+    color = st.color_picker('Q20-4', '#000276')
+    st.write(color)
 with col5:
-color = st.color_picker('Q20-5', '#FFFF00')
-st.write(color) 
+    color = st.color_picker('Q20-5', '#FFFF00')
+    st.write(color) 
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
 if choose_id == '1':
