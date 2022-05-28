@@ -907,3 +907,6 @@ def app():
         with col3:
             color = st.color_picker('Q20-3', '#000276')
             st.write(color)    
+            
+if __name__ == "__main__":
+    app()
