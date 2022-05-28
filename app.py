@@ -1,9 +1,6 @@
 import streamlit as st
 from multiapp import MultiApp
-from apps import (
-    class2021,
-    all2021,
-)
+from apps import (class2021, all2021,)
 
 st.set_page_config(layout="wide")
 
