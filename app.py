@@ -1,6 +1,7 @@
 import streamlit as st
 from multiapp import MultiApp
-from apps import (class2021, all2021,)
+import class2021
+import all2021
 
 PAGES = {
     "Result": class2021,
