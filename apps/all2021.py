@@ -23,7 +23,8 @@ def app():
   #欠損値を削除（nation, countryのデータ)
   cdf = cdf.dropna()
 
-  #kwd個別に切り出して可視化していく
+  #kwd個別に切り出して可視化していく　
+  ##愛らしい
   cdf_airashii = cdf[cdf['kwd'] == '愛らしい']
   #cdf_airashii
 
@@ -37,3 +38,17 @@ def app():
   
   st.pyplot()
 
+
+  
+  ##楽しい
+  cdf_tanoshii = cdf[cdf['kwd'] == '楽しい']
+
+  #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
+  plt.scatter(cdf_tanoshii['col_3a'], cdf_tanohii['col_3b'], label='col_3b', color='blue')
+  plt.scatter(cdf_tanoshii['col_3a'], cdf_tanoshii['col_3c'], label='col_3c', color='green')
+  plt.xlabel('col_3a')
+  plt.ylabel("col_3b & col_3c")
+  plt.legend()
+  plt.show()
+  
+  st.pyplot()
