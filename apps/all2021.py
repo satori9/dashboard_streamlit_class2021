@@ -100,7 +100,7 @@ def app():
   
   
     ##格調のある
-  cdf_kakuchou = cdf[cdf['kwd'] == '格調のある']
+  cdf_kakuchou = cdf[cdf['kwd'] == '調のある']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_kakuchou['col_3a'], cdf_kakuchou['col_3b'], label='col_3b', color='blue')
@@ -170,7 +170,7 @@ def app():
   
   
     ##春
-  cdf_spring = cdf[cdf['kwd'] == '春']
+  cdf_spring = cdf[cdf['kwd'] == '春(spring)']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_spring['col_3a'], cdf_spring['col_3b'], label='col_3b', color='blue')
@@ -184,7 +184,7 @@ def app():
   
   
     ##夏
-  cdf_summer = cdf[cdf['kwd'] == '夏']
+  cdf_summer = cdf[cdf['kwd'] == '夏(summer)']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_summer['col_3a'], cdf_summer['col_3b'], label='col_3b', color='blue')
@@ -198,7 +198,7 @@ def app():
   
   
     ##秋
-  cdf_autumn = cdf[cdf['kwd'] == '秋']
+  cdf_autumn = cdf[cdf['kwd'] == '秋(autumn)']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_autumn['col_3a'], cdf_autumn['col_3b'], label='col_3b', color='blue')
@@ -212,7 +212,7 @@ def app():
   
   
     ##冬
-  cdf_winter = cdf[cdf['kwd'] == '冬']
+  cdf_winter = cdf[cdf['kwd'] == '冬(winter)']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_winter['col_3a'], cdf_winter['col_3b'], label='col_3b', color='blue')
@@ -226,7 +226,7 @@ def app():
   
   
     ##朝
-  cdf_morning = cdf[cdf['kwd'] == '朝']
+  cdf_morning = cdf[cdf['kwd'] == '朝(morning)']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_morning['col_3a'], cdf_morning['col_3b'], label='col_3b', color='blue')
@@ -240,7 +240,7 @@ def app():
   
   
     ##昼
-  cdf_midday = cdf[cdf['kwd'] == '昼']
+  cdf_midday = cdf[cdf['kwd'] == '昼(midday)']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_midday['col_3a'], cdf_midday['col_3b'], label='col_3b', color='blue')
@@ -254,7 +254,7 @@ def app():
   
   
     ##夕
-  cdf_evening = cdf[cdf['kwd'] == '夕']
+  cdf_evening = cdf[cdf['kwd'] == '夕(sunset)']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_evening['col_3a'], cdf_evening['col_3b'], label='col_3b', color='blue')
@@ -267,7 +267,7 @@ def app():
   st.pyplot()
   
     ##夜
-  cdf_night = cdf[cdf['kwd'] == '夜']
+  cdf_night = cdf[cdf['kwd'] == '夜(night)']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_night['col_3a'], cdf_night['col_3b'], label='col_3b', color='blue')
