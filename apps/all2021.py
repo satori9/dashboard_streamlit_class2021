@@ -114,11 +114,11 @@ def app():
   
   
     ##優雅な
-  cdf_yuugana = cdf[cdf['kwd'] == '優雅な']
+  cdf_yuuga = cdf[cdf['kwd'] == '優雅な']
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
-  plt.scatter(cdf_yuugana['col_3a'], cdf_yuugana['col_3b'], label='col_3b', color='blue')
-  plt.scatter(cdf_yuugana'col_3a'], cdf_yuugana['col_3c'], label='col_3c', color='green')
+  plt.scatter(cdf_yuuga['col_3a'], cdf_yuuga['col_3b'], label='col_3b', color='blue')
+  plt.scatter(cdf_yuuga['col_3a'], cdf_yuuga['col_3c'], label='col_3c', color='green')
   plt.xlabel('col_3a')
   plt.ylabel("col_3b & col_3c")
   plt.legend()
