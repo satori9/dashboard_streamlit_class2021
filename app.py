@@ -1,13 +1,12 @@
 import streamlit as st
 from multiapp import MultiApp
-import class2021
-import all2021
+from apps import (class2021,  all2021)
 
-app = MultiApp()
+apps = MultiApp()
 
 # Add all your application here
-app.add_app("Result", class2021.app)
-app.add_app("Analysis", all2021.app)
+apps.add_app("Result", class2021.app)
+apps.add_app("Analysis", all2021.app)
 
 # The main app
-app.run()
+apps.run()
