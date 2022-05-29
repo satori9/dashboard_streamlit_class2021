@@ -258,7 +258,7 @@ def app():
 
   #col_3aの選択色を第一選択色として、col_3b, col_3cとの関連を見るために散布図を書く
   plt.scatter(cdf_evening['col_3a'], cdf_evening['col_3b'], label='col_3b', color='blue')
-  plt.scatter(cdf_evening'col_3a'], cdf_evening'col_3c'], label='col_3c', color='green')
+  plt.scatter(cdf_evening['col_3a'], cdf_evening['col_3c'], label='col_3c', color='green')
   plt.xlabel('col_3a')
   plt.ylabel("col_3b & col_3c")
   plt.legend()
