@@ -26,7 +26,7 @@ def app():
   
   #kwd個別に切り出して可視化していく　
   
-  st.caption("3つの選択色の関係性を見る　ー　col_3aを第一選択色として、col_3b, col_3cとの散布図を書く")
+  st.caption("①3つの選択色の関係性を見る　ー　col_3aを第一選択色として、col_3b, col_3cとの散布図を書く")
   
   ##愛らしい
   cdf_airashii = cdf[cdf['kwd'] == '愛らしい']
