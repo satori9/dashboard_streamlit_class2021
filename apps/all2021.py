@@ -39,7 +39,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q1：愛らしい")
+  st.subheader("Q1：愛らしい")
   st.pyplot()
 
 
@@ -53,7 +53,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q2：楽しい")
+  st.subheader("Q2：楽しい")
   st.pyplot()
   
   
@@ -67,7 +67,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q3：豪華な")
+  st.subheader("Q3：豪華な")
   st.pyplot()
   
   
@@ -81,7 +81,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q4：素朴な")
+  st.subheader("Q4：素朴な")
   st.pyplot()
   
   
@@ -95,7 +95,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q5：味わい深い")
+  st.subheader("Q5：味わい深い")
   st.pyplot()
   
   
@@ -109,7 +109,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q6：格調のある")
+  st.subheader("Q6：格調のある")
   st.pyplot()
   
   
@@ -123,7 +123,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q7：優雅な")
+  st.subheader("Q7：優雅な")
   st.pyplot()
   
   
@@ -137,7 +137,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q8：気品のある")
+  st.subheader("Q8：気品のある")
   st.pyplot()
   
   
@@ -151,7 +151,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q9：合理的な")
+  st.subheader("Q9：合理的な")
   st.pyplot()
   
   
@@ -165,7 +165,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q10：favorite")
+  st.subheader("Q10：favorite")
   st.pyplot()
   
   
@@ -179,7 +179,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q13：春")
+  st.subheader("Q13：春")
   st.pyplot()
   
   
@@ -193,7 +193,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q14：夏")
+  st.subheader("Q14：夏")
   st.pyplot()
   
   
@@ -207,7 +207,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q15：秋")
+  st.subheader("Q15：秋")
   st.pyplot()
   
   
@@ -221,7 +221,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q16：冬")
+  st.subheader("Q16：冬")
   st.pyplot()
   
   
@@ -235,7 +235,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q17：朝")
+  st.subheader("Q17：朝")
   st.pyplot()
   
   
@@ -249,7 +249,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q18：昼")
+  st.subheader("Q18：昼")
   st.pyplot()
   
   
@@ -263,7 +263,7 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q19：夕")
+  st.subheader("Q19：夕")
   st.pyplot()
   
     ##夜
@@ -276,5 +276,5 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
-  st.subtitle("Q20：夜")
+  st.subheader("Q20：夜")
   st.pyplot()
