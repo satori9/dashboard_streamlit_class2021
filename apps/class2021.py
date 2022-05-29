@@ -4,13 +4,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-#import japanize_matplotlib
+import japanize_matplotlib
 
 def app():
 
     #日本語文字化け対策でフォント指定　　-！! Web表示すると効かないエラー
-    sns.set(font='Yu Gothic')
-    plt.rcParams['font.family'] = "Yu Gothic"
+    #sns.set(font='Yu Gothic')
+    #plt.rcParams['font.family'] = "Yu Gothic"
 
     st.title("2021年度色彩トレーニング結果")
 
