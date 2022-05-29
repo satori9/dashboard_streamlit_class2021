@@ -34,4 +34,6 @@ def app():
   plt.ylabel("col_3b & col_3c")
   plt.legend()
   plt.show()
+  
+  st.pyplot()
 
