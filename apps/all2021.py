@@ -23,10 +23,11 @@ def app():
   #欠損値を削除（nation, countryのデータ)
   cdf = cdf.dropna()
 
-  
+  st.caption("①t検定　ー　クラス間の差異を確認")
+  st.caption("②パレート図　ー　色構成を見る")
   #kwd個別に切り出して可視化していく　
   
-  st.caption("①3つの選択色の関係性を見る　ー　col_3aを第一選択色として、col_3b, col_3cとの散布図を書く")
+  st.caption("③3つの選択色の関係性を見る　ー　col_3aを第一選択色として、col_3b, col_3cとの散布図を書く")
   
   ##愛らしい
   cdf_airashii = cdf[cdf['kwd'] == '愛らしい']
