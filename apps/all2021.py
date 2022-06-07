@@ -12,6 +12,9 @@ plt.rcParams['font.family'] = "Hiragino Sans"
 def app():
 
   st.title("トレーニング結果分析")
+  
+    #カラーチップを表示        
+  st.image("color_chip156.jpeg", caption='色彩コード変換表(dummy)')
 
   #トップ選択色時に一緒に選択された第二、第三選択色の数をkwdごとにカウントした表
   cdf = pd.read_csv("col3.csv")
