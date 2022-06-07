@@ -557,7 +557,7 @@ def app():
 
     df_autumn_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
 
-    st.header("Q12：秋(autumn")
+    st.header("Q12：秋(autumn)")
     st.bar_chart(df_autumn_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
