@@ -72,7 +72,7 @@ def app():
     d_col = dict(zip(cdf['num'], cdf['#col']))
 
     #カラーチップを表示        
-   # st.image("color_chip156.jpeg", caption='色彩コード変換表(dummy)') --分析へ移動
+    st.image("colorchip156.png", caption='156色カラーパレット') 
 
 
     #streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
