@@ -12,7 +12,7 @@ def app():
     #sns.set(font='Yu Gothic')
     #plt.rcParams['font.family'] = "Yu Gothic"
 
-    st.title("2021年度色彩トレーニング結果")
+    st.title("トレーニング結果")
 
 
     #2021年のクラス分をクレンジングしたデータ
