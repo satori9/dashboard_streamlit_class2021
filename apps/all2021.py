@@ -29,8 +29,36 @@ def app():
   st.caption("①t検定　ー　クラス間の差異を確認")
   st.caption("②パレート図　ー　色構成を見る")
   #kwd個別に切り出して可視化していく　
-  
-  
+
+   #下準備データ -ひとまずexpanderでラッピング。本来は非表示にしたい。
+  with st.expander("show data"):
+      with st.form(key='data', clear_on_submit=True):
+
+          #クロス集計の準備：col_sum列のカンマ区切りのデータを分割
+          kwd = df['kwd'].map(lambda x: x.split(','))
+          #numpy.arrayにして二次元から一次元のデータに変換
+          ser = pd.Series(np.hstack(kwd.values))
+          #ユニークにする
+          unique_kwd = ser.str.strip().unique()
+          unique_kwd.sort()
+          unique_kwd
+
+          #指定したkwdをDataframeから抽出
+          def filter_df_by_kwd(df, kwd):
+              kwd_df = df.loc[df['kwd'].map(lambda x: kwd in x)].copy()
+              kwd_df['kwd'] = kwd
+              return kwd_df
+
+          #上記の関数を全てのkwdに対して実行
+          kwd_df_list = [filter_df_by_kwd(df, kwd) for kwd in unique_kwd]
+          #上記dataを統合
+          df2 = pd.concat(kwd_df_list)
+          #col_sum列でソート
+          df2.sort_values('col_sum', inplace=True)
+
+          #kwd列とcol_sum列のクロス集計
+          df2.pivot_table(index='kwd', columns='col_sum', values='count', aggfunc=np.sum)
+
 
   #箱ひげ図で全体の散らばりを見る
   sns.catplot(data=df2, x="col_3a", y="kwd", kind="box",height=10, aspect=1.5, palette="coolwarm")
