@@ -87,7 +87,7 @@ def app():
 
 
 
-""" 
+    """ 
     #分析へ移動
     #箱ひげ図で全体の散らばりを見る
     sns.catplot(data=df2, x="col_3a", y="kwd", kind="box",height=10, aspect=1.5, palette="coolwarm")
@@ -100,7 +100,7 @@ def app():
     sns.displot(data=df2, x="col_3a", y="kwd",height=10, aspect=1.5)
     st.subheader("同様に濃淡で示す")
     st.pyplot()
-"""
+    """
 
 
     #kwd個別に切り出して可視化していく
