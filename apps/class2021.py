@@ -72,7 +72,7 @@ def app():
     d_col = dict(zip(cdf['num'], cdf['#col']))
 
     #カラーチップを表示        
-    st.image("color_chip156.jpeg", caption='色彩コード変換表(dummy)')
+   # st.image("color_chip156.jpeg", caption='色彩コード変換表(dummy)') --分析へ移動
 
 
     #streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
@@ -87,7 +87,8 @@ def app():
 
 
 
-
+""" 
+    #分析へ移動
     #箱ひげ図で全体の散らばりを見る
     sns.catplot(data=df2, x="col_3a", y="kwd", kind="box",height=10, aspect=1.5, palette="coolwarm")
     st.subheader("1〜156の選択色のキーワードごとの集中度")
@@ -99,7 +100,7 @@ def app():
     sns.displot(data=df2, x="col_3a", y="kwd",height=10, aspect=1.5)
     st.subheader("同様に濃淡で示す")
     st.pyplot()
-
+"""
 
 
     #kwd個別に切り出して可視化していく
