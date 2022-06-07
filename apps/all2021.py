@@ -32,6 +32,12 @@ def app():
 
    #下準備データ -ひとまずexpanderでラッピング。本来は非表示にしたい。
   with st.expander("show data"):
+          #2021年のクラス分をクレンジングしたデータ
+      df = pd.read_csv("class_2021.csv")
+      #欠損値を０で補う
+      df.fillna('FILL')
+      df['col_sum'] = df['col_sum'].fillna(0).astype('int64')
+
       with st.form(key='data', clear_on_submit=True):
 
           #クロス集計の準備：col_sum列のカンマ区切りのデータを分割
