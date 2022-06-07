@@ -30,6 +30,22 @@ def app():
   st.caption("②パレート図　ー　色構成を見る")
   #kwd個別に切り出して可視化していく　
   
+  
+
+  #箱ひげ図で全体の散らばりを見る
+  sns.catplot(data=df2, x="col_3a", y="kwd", kind="box",height=10, aspect=1.5, palette="coolwarm")
+  st.subheader("1〜156の選択色のキーワードごとの集中度")
+  st.set_option('deprecation.showPyplotGlobalUse', False)
+  st.pyplot()
+  st.caption("*縦軸は選択色の番号")
+
+  #ヒートマップで全体の散らばりを見る
+  sns.displot(data=df2, x="col_3a", y="kwd",height=10, aspect=1.5)
+  st.subheader("同様に濃淡で示す")
+  st.pyplot()
+
+
+  
   st.caption("③3つの選択色の関係性を見る　ー　col_3aを第一選択色として、col_3b, col_3cとの散布図を書く")
   
   ##愛らしい
