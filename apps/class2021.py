@@ -146,15 +146,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q1-1', '#FFFFFF')
+            color = st.color_picker('Q1-y1', '#FFFFFF')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q1_2', '#FFB8E6')
+            color = st.color_picker('Q1_y2', '#FFB8E6')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q1-3', '#FFE8E8')
+            color = st.color_picker('Q1-y3', '#FFE8E8')
             st.write(color)
 
 
@@ -492,15 +492,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q10-1', '#FFE8F6')
+            color = st.color_picker('Q10-y1', '#FFE8F6')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q10_2', '#F6E7FF')
+            color = st.color_picker('Q10_y2', '#F6E7FF')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q10-3', '#FFD4B7')
+            color = st.color_picker('Q10-y3', '#FFD4B7')
             st.write(color)      
 
     #!夏(summer)
@@ -539,15 +539,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q11-1', '#55E1FF')
+            color = st.color_picker('Q11-y1', '#55E1FF')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q11_2', '#FF58C4')
+            color = st.color_picker('Q11_y2', '#FF58C4')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q11-3', '#BF55FF')
+            color = st.color_picker('Q11-y3', '#BF55FF')
             st.write(color)      
 
     #!秋(autumn)
@@ -586,15 +586,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q12-1', '#D2A500')
+            color = st.color_picker('Q12-y1', '#D2A500')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q12_2', '#FFE8E8')
+            color = st.color_picker('Q12_y2', '#FFE8E8')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q12-3', '#750000')
+            color = st.color_picker('Q12-y3', '#750000')
             st.write(color)      
 
     #!冬(winter)
@@ -633,15 +633,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q13-1', '#B8DEFF')
+            color = st.color_picker('Q13-y1', '#B8DEFF')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q13_2', '#FFE8E8')
+            color = st.color_picker('Q13_y2', '#FFE8E8')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q13-3', '#2A37FF')
+            color = st.color_picker('Q13-y3', '#2A37FF')
             st.write(color)   
 
 
@@ -681,15 +681,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q14-1', '#B8DEFF')
+            color = st.color_picker('Q14-y1', '#B8DEFF')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q14_2', '#FFD4B7')
+            color = st.color_picker('Q14_y2', '#FFD4B7')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q14-3y', '#FFFFB5')
+            color = st.color_picker('Q14-y3', '#FFFFB5')
             st.write(color)       
 
     #!昼(midday)
@@ -728,15 +728,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q15-1', '#FFFF83')
+            color = st.color_picker('Q15-y1', '#FFFF83')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q15_2', '#BDFFB6')
+            color = st.color_picker('Q15_y2', '#BDFFB6')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q15-3', '#55E1FF')
+            color = st.color_picker('Q15-y3', '#55E1FF')
             st.write(color)  
 
                   
@@ -777,15 +777,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q16-1', '#FF0000')
+            color = st.color_picker('Q16-y1', '#FF0000')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q16_2', '#FFA511')
+            color = st.color_picker('Q16_y2', '#FFA511')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q16-3', '#FFFF00')
+            color = st.color_picker('Q16-y3', '#FFFF00')
             st.write(color)      
 
                   
@@ -825,15 +825,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q17-y', '#000000')
+            color = st.color_picker('Q17-y1', '#000000')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q17_2', '#000347')
+            color = st.color_picker('Q17_y2', '#000347')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q17-3', '#000276')
+            color = st.color_picker('Q17-y3', '#000276')
             st.write(color)
                   
 
@@ -873,15 +873,15 @@ def app():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            color = st.color_picker('Q18-1', '#FFE8F6')
+            color = st.color_picker('Q18-y1', '#FFE8F6')
             st.write(color)
 
         with col2:
-            color = st.color_picker('Q18_2', '#F6E7FF')
+            color = st.color_picker('Q18_y2', '#F6E7FF')
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q18-3', '#FF88D5')
+            color = st.color_picker('Q18-y3', '#FF88D5')
             st.write(color)  
 
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
