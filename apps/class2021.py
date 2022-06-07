@@ -115,7 +115,7 @@ def app():
 
     #streamlit表示
     st.header("Q1：愛らしい(lovely)")
-    st.bar_chart(df_airashii_count)
+    #st.bar_chart(df_airashii_count)
  
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
