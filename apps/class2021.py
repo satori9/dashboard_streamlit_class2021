@@ -955,7 +955,7 @@ def app():
         color = st.color_picker('Q20-5', '#FF88D5')
         st.write(color)
 
- 　　　　 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
-        st.subheader("あなたの選択した３色") 
+        st.subheader("あなたの選択した３色")   
         st.text("指定されていません。")
