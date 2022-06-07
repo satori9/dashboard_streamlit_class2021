@@ -689,7 +689,7 @@ def app():
             st.write(color)
 
         with col3:
-            color = st.color_picker('Q14-3', '#FFFFB5')
+            color = st.color_picker('Q14-3y', '#FFFFB5')
             st.write(color)       
 
     #!昼(midday)
