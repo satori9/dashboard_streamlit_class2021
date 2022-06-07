@@ -269,11 +269,9 @@ def app():
  
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
-        st.subheader("あなたの選択した３色")   
+        st.subheader("あなたの選択した３色")
         st.text("指定されていません。")
-
- 
-
+        
 　　　　　　　　#!(5) 味わい深い
     df_ajiwai = df[df['kwd'] == 'tasteful']
 
