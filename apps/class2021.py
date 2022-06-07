@@ -275,7 +275,7 @@ def app():
  
 
 　　　　　　　　#!(5) 味わい深い'
-    df_ajiwai = df[df['kwd'] == 'tasteful]
+    df_ajiwai = df[df['kwd'] == 'tasteful']
 
     df_ajiwai_count = df_ajiwai[['count',"col_sum"]].groupby("col_sum").count()
 
