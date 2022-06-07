@@ -272,7 +272,7 @@ def app():
         st.subheader("あなたの選択した３色")
         st.text("指定されていません。")
         
-
+    #!(5) 味わい深い
     df_ajiwai = df[df['kwd'] == 'tasteful']
 
     df_ajiwai_count = df_ajiwai[['count',"col_sum"]].groupby("col_sum").count()
@@ -385,7 +385,7 @@ def app():
                    
 
     #!(8) 気品のある
-    df_kihin = df[df['kwd'] == 'elegant]
+    df_kihin = df[df['kwd'] == 'elegant']
 
     df_kihin_count = df_kihin[['count',"col_sum"]].groupby("col_sum").count()
 
