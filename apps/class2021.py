@@ -119,7 +119,7 @@ def app():
  
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("airashii.teemap.png")
+    st.image("airashii.treemap.png")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず
     st.subheader("選択色トップ5")
