@@ -111,7 +111,7 @@ def app():
     df_airashii_count = df_airashii[['count',"col_sum"]].groupby("col_sum").count()
 
     #選択色を番号順で並べ、選択した数の総計をバーチャートで可視化
-    df_airashii_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
+    #df_airashii_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
 
     #streamlit表示
     st.header("Q1：愛らしい(lovely)")
@@ -122,7 +122,7 @@ def app():
     st.image("airashii.treemap.png")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -176,7 +176,7 @@ def app():
     st.bar_chart(df_tanoshii_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -216,7 +216,7 @@ def app():
     st.bar_chart(df_goukana_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -252,7 +252,7 @@ def app():
     st.bar_chart(df_sobokuna_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -288,7 +288,7 @@ def app():
     st.bar_chart(df_ajiwai_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -326,7 +326,7 @@ def app():
     st.bar_chart(df_kakuchou_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -363,7 +363,7 @@ def app():
     st.bar_chart(df_yuuga_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -400,7 +400,7 @@ def app():
     st.bar_chart(df_kihin_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -436,7 +436,7 @@ def app():
     st.bar_chart(df_gouriteki_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -472,7 +472,7 @@ def app():
     st.bar_chart(df_spring_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -519,7 +519,7 @@ def app():
     st.bar_chart(df_summer_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -566,7 +566,7 @@ def app():
     st.bar_chart(df_autumn_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -613,7 +613,7 @@ def app():
     st.bar_chart(df_winter_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -661,7 +661,7 @@ def app():
     st.bar_chart(df_morning_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -708,7 +708,7 @@ def app():
     st.bar_chart(df_midday_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -757,7 +757,7 @@ def app():
     st.bar_chart(df_sunset_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -805,7 +805,7 @@ def app():
     st.bar_chart(df_night_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -853,7 +853,7 @@ def app():
     st.bar_chart(df_favorite_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -906,7 +906,7 @@ def app():
     st.bar_chart(df_hometown_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
@@ -941,7 +941,7 @@ def app():
     st.bar_chart(df_nation_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
-    st.subheader("選択色トップ5")
+    st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
