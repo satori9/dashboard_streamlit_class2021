@@ -175,6 +175,10 @@ def app():
     st.header("Q2：楽しい(fun)")
     st.bar_chart(df_tanoshii_count)
 
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
+    st.image("tanoshii.treemap.png")    
+    
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
