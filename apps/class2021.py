@@ -177,9 +177,6 @@ def app():
     #streamlit表示
     st.header("Q2：楽しい(fun)")
     #st.bar_chart(df_tanoshii_count)
-
-
-    st.subheader("トレーニング参加者全体の選択色")  
     
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
@@ -200,15 +197,12 @@ def app():
     with col4:
         color = st.color_picker('Q2-4', '#FFB954')
         st.write(color)
-
     with col5:
         color = st.color_picker('Q2-5', '#FF7F1A')
         st.write(color)
-
-   with col6:
+    with col6:
         color = st.color_picker('Q2-6', '#FFA511')
         st.write(color)
-
     with col7:
         color = st.color_picker('Q2-7', '#FF0000')
         st.write(color)       
@@ -253,12 +247,10 @@ def app():
         st.write(color)
     with col5:
         color = st.color_picker('Q3-5', '#FFFF26')
-        st.write(color)
-        
+        st.write(color)       
     with col6:
         color = st.color_picker('Q4-6', '#FF2A22')
         st.write(color)
-        
     with col7:
         color = st.color_picker('Q4-7', '#D30000')
         st.write(color)   
@@ -318,12 +310,10 @@ def app():
         st.write(color)
     with col4:
         color = st.color_picker('Q4-9', '#B2B2B2')
-        st.write(color)
-        
+        st.write(color)       
     with col5:
         color = st.color_picker('Q4-10', '#656565')
         st.write(color)
-        
     with col6:
         color = st.color_picker('Q4-11', '#656500')
         st.write(color)
@@ -424,8 +414,7 @@ def app():
         st.write(color)
     with col5:
         color = st.color_picker('Q6-5', '#D30000')
-        st.write(color)
-        
+        st.write(color)        
     with col6:
         color = st.color_picker('Q6-6', '#750000)
         st.write(color)
@@ -471,18 +460,18 @@ def app():
                                 
     col1, col2, col3, col4 = st.columns(4)
 
-    with col5:
+    with col1:
         color = st.color_picker('Q7-5', '#7F00D4')
         st.write(color)
-    with col6:
-        color = st.color_picker('Q7-2', '#750000')
+    with col2:
+        color = st.color_picker('Q7-6', '#750000')
         st.write(color)
-    with col7:
-        color = st.color_picker('Q7-3', '#B9BFFF')
+    with col3:
+        color = st.color_picker('Q7-7', '#B9BFFF')
         st.write(color)
-    with col8:
-        color = st.color_picker('Q7-4', '#58B1FF')
-        st.write(color)                                
+    with col4:
+        color = st.color_picker('Q7-8', '#58B1FF')
+        st.write(color)                               
                                 
                                
         
@@ -526,8 +515,7 @@ def app():
         st.write(color)
     with col5:
         color = st.color_picker('Q8-5', '#000000')
-        st.write(color)    
-                                
+        st.write(color)                                   
     with col6:
         color = st.color_picker('Q8-6', '#FFFFB5')
         st.write(color)    
@@ -576,10 +564,10 @@ def app():
         color = st.color_picker('Q9-5', '#FFFF00')
         st.write(color) 
     with col2:
-        color = st.color_picker('Q9-2', '#0085FF')
+        color = st.color_picker('Q9-6', '#0085FF')
         st.write(color)
     with col3:
-        color = st.color_picker('Q9-3', '#7F7F7F')
+        color = st.color_picker('Q9-7', '#7F7F7F')
         st.write(color)                                
    
 
@@ -646,6 +634,8 @@ def app():
             color = st.color_picker('Q10-y3', '#FFD4B7')
             st.write(color)      
 
+                                
+                                
     #!夏(summer)
     df_summer = df[df['kwd'] == 'summer']
 
@@ -674,10 +664,9 @@ def app():
         st.write(color)
     with col5:
         color = st.color_picker('Q11-5', '#FF0000')
-        st.write(color) 
-                                
+        st.write(color)                            
     with col6:
-        color = st.color_picker('Q11-5', '#FF6100')
+        color = st.color_picker('Q11-6', '#FF6100')
         st.write(color) 
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
@@ -702,6 +691,7 @@ def app():
             color = st.color_picker('Q11-y3', '#BF55FF')
             st.write(color)      
 
+                                
     #!秋(autumn)
     df_autumn = df[df['kwd'] == 'autumn']
 
@@ -757,6 +747,8 @@ def app():
             color = st.color_picker('Q12-y3', '#750000')
             st.write(color)      
 
+                                
+                                
     #!冬(winter)
     df_winter = df[df['kwd'] == 'winter']
 
@@ -924,7 +916,8 @@ def app():
             color = st.color_picker('Q15-y3', '#55E1FF')
             st.write(color)  
 
-                  
+ 
+                                
     #!夕(sunset)
     df_sunset = df[df['kwd'] == 'sunset']
 
@@ -1031,6 +1024,7 @@ def app():
             st.write(color)
                   
 
+                                
     #!'favorite'
     df_favorite = df[df['kwd'] == 'favorite']
 
