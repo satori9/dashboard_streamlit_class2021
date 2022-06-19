@@ -577,7 +577,7 @@ def app():
         color = st.color_picker('Q11-5', '#FF0000')
         st.write(color) 
 
-     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.image("summer.treemap.bmp")
 
 
