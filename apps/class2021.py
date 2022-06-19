@@ -245,6 +245,11 @@ def app():
         color = st.color_picker('Q3-5', '#FFFF26')
         st.write(color)
 
+        
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("goukana.treemap.png")        
+        
+        
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
@@ -316,6 +321,9 @@ def app():
     with col5:
         color = st.color_picker('Q5-5', '#003232')
         st.write(color)
+        
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("ajiwai.treemap.png")        
 
                    
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -354,6 +362,10 @@ def app():
     with col5:
         color = st.color_picker('Q6-5', '#D30000')
         st.write(color)
+        
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("kakucho.treemap.png")        
+        
 
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
@@ -391,6 +403,11 @@ def app():
     with col5:
         color = st.color_picker('Q7-5', '#750000')
         st.write(color)
+        
+        
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("yuuga.treemap.png")
+    
 
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
@@ -429,6 +446,10 @@ def app():
         color = st.color_picker('Q8-5', '#000000')
         st.write(color)    
 
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("kihin.treemap.png") 
+
+
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
@@ -465,7 +486,11 @@ def app():
         color = st.color_picker('Q9-5', '#FFFF00')
         st.write(color)    
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("gouriteki.treemap.png")
+        
+        
+        #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
         st.text("指定されていません。")
@@ -501,6 +526,10 @@ def app():
         color = st.color_picker('Q10-5', '#BDFFB6')
         st.write(color) 
 
+        
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("spring.treemap.png")        
+        
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
@@ -547,6 +576,10 @@ def app():
     with col5:
         color = st.color_picker('Q11-5', '#FF0000')
         st.write(color) 
+
+     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("summer.treemap.png")
+
 
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
@@ -595,7 +628,11 @@ def app():
         color = st.color_picker('Q12-5', '#755C00')
         st.write(color) 
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("autumntreemap.png")
+        
+        
+        #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
         col1, col2, col3 = st.columns(3)
@@ -642,7 +679,11 @@ def app():
         color = st.color_picker('Q13-5', '#B7F2FF')
         st.write(color)   
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("winter.treemap.png")
+        
+        
+        #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
         col1, col2, col3 = st.columns(3)
@@ -690,7 +731,10 @@ def app():
         color = st.color_picker('Q14-5', '#FF9B56')
         st.write(color)   
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("morning.treemap.png")
+        
+        #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
         col1, col2, col3 = st.columns(3)
@@ -737,7 +781,11 @@ def app():
         color = st.color_picker('Q15-5', '#FFFF00')
         st.write(color)   
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("midday.treemap.png")        
+        
+        #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
         col1, col2, col3 = st.columns(3)
@@ -786,7 +834,11 @@ def app():
         color = st.color_picker('Q16-5', '#FFA511')
         st.write(color) 
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("sunset.treemap.png")        
+        
+        #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
         col1, col2, col3 = st.columns(3)
@@ -834,7 +886,10 @@ def app():
         color = st.color_picker('Q17-5', '#FFFF00')
         st.write(color) 
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("night.treemap.png")
+        
+        #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
         col1, col2, col3 = st.columns(3)
@@ -882,7 +937,10 @@ def app():
         color = st.color_picker('Q18-5', '#55E1FF')
         st.write(color) 
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("favorite.treemap.png") 
+
+#1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
         col1, col2, col3 = st.columns(3)
@@ -935,7 +993,11 @@ def app():
         color = st.color_picker('Q19-5', '#91FF85')
         st.write(color) 
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("hometown.treemap.png") 
+
+
+#1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
         st.text("指定されていません。")
@@ -970,6 +1032,10 @@ def app():
         color = st.color_picker('Q20-5', '#FF88D5')
         st.write(color)
 
+        
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("nation.treemap.png")        
+        
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
