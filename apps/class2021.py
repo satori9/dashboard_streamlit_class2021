@@ -629,7 +629,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("autumntreemap.bmp")
+    st.image("autumn.treemap.bmp")
         
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
