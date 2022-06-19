@@ -543,7 +543,7 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
     with col1:
         color = st.color_picker('Q9-1', '#0000D5')
@@ -556,17 +556,14 @@ def app():
         st.write(color)
     with col4:
         color = st.color_picker('Q9-4', '#FFFFFF')
-        st.write(color)
-                              
-    col1, col2, col3 = st.columns(3)
-
-    with col1:
+        st.write(color)                            
+    with col5:
         color = st.color_picker('Q9-5', '#FFFF00')
         st.write(color) 
-    with col2:
+    with col6:
         color = st.color_picker('Q9-6', '#0085FF')
         st.write(color)
-    with col3:
+    with col7:
         color = st.color_picker('Q9-7', '#7F7F7F')
         st.write(color)                                
    
@@ -814,7 +811,7 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
     with col1:
         color = st.color_picker('Q14-1', '#B7F2FF')
@@ -825,19 +822,16 @@ def app():
     with col3:
         color = st.color_picker('Q14-3', '#FFFFB5')
         st.write(color)
-
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
+    with col4:
         color = st.color_picker('Q14-4', '#FF2A22')
         st.write(color)
-    with col2:
+    with col5:
         color = st.color_picker('Q14-5', '#FFF1B6')
         st.write(color)   
-    with col3:
+    with col6:
         color = st.color_picker('Q14-6', '#FF9B56')
         st.write(color)
-    with col4:
+    with col7:
         color = st.color_picker('Q14-7', '#FFB954')
         st.write(color)                                
 
