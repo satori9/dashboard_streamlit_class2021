@@ -832,7 +832,7 @@ def app():
         color = st.color_picker('Q14-4', '#FF2A22')
         st.write(color)
     with col2:
-        color = st.color_picker('Q14-5', '#FFF1B6)
+        color = st.color_picker('Q14-5', '#FFF1B6')
         st.write(color)   
     with col3:
         color = st.color_picker('Q14-6', '#FF9B56')
