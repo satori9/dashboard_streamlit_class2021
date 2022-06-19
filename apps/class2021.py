@@ -247,7 +247,7 @@ def app():
 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("goukana.treemap.png")        
+    st.image("goukana.treemap.bmp")        
         
         
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -323,7 +323,7 @@ def app():
         st.write(color)
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("ajiwai.treemap.png")        
+    st.image("ajiwai.treemap.bmp")        
 
                    
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -364,7 +364,7 @@ def app():
         st.write(color)
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("kakucho.treemap.png")        
+    st.image("kakucho.treemap.bmp")        
         
 
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -406,7 +406,7 @@ def app():
         
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("yuuga.treemap.png")
+    st.image("yuuga.treemap.bmp")
     
 
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -447,7 +447,7 @@ def app():
         st.write(color)    
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("kihin.treemap.png") 
+    st.image("kihin.treemap.bmp") 
 
 
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -487,7 +487,7 @@ def app():
         st.write(color)    
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("gouriteki.treemap.png")
+    st.image("gouriteki.treemap.bmp")
         
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -528,7 +528,7 @@ def app():
 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("spring.treemap.png")        
+    st.image("spring.treemap.bmp")        
         
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
@@ -578,7 +578,7 @@ def app():
         st.write(color) 
 
      #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("summer.treemap.png")
+    st.image("summer.treemap.bmp")
 
 
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -629,7 +629,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("autumntreemap.png")
+    st.image("autumntreemap.bmp")
         
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -680,7 +680,7 @@ def app():
         st.write(color)   
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("winter.treemap.png")
+    st.image("winter.treemap.bmp")
         
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -732,7 +732,7 @@ def app():
         st.write(color)   
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("morning.treemap.png")
+    st.image("morning.treemap.bmp")
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
@@ -783,7 +783,7 @@ def app():
 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("midday.treemap.png")        
+    st.image("midday.treemap.bmp")        
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
@@ -836,7 +836,7 @@ def app():
 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("sunset.treemap.png")        
+    st.image("sunset.treemap.bmp")        
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
@@ -887,7 +887,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("night.treemap.png")
+    st.image("night.treemap.bmp")
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
@@ -938,7 +938,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("favorite.treemap.png") 
+    st.image("favorite.treemap.bmp") 
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
@@ -994,7 +994,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("hometown.treemap.png") 
+    st.image("hometown.treemap.bmp") 
 
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -1034,7 +1034,7 @@ def app():
 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("nation.treemap.png")        
+    st.image("nation.treemap.bmp")        
         
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
