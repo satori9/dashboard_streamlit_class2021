@@ -416,7 +416,7 @@ def app():
         color = st.color_picker('Q6-5', '#D30000')
         st.write(color)        
     with col6:
-        color = st.color_picker('Q6-6', '#750000)
+        color = st.color_picker('Q6-6', '#750000')
         st.write(color)
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
