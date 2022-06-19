@@ -286,6 +286,10 @@ def app():
         color = st.color_picker('Q4-5', '#656565')
         st.write(color)
 
+        
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("sobokuna.treemap.bmp")   
+    
  
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
