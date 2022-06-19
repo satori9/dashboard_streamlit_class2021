@@ -117,10 +117,7 @@ def app():
     st.header("Q1：愛らしい(lovely)")
     #st.bar_chart(df_airashii_count)
  
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("airashii.treemap.png")
-
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -144,7 +141,12 @@ def app():
     with col5:
         color = st.color_picker('Q1-5', '#FF58C4')
         st.write(color)
-
+        
+        
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.image("airashii.treemap.png")
+    
+        
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
         st.subheader("あなたの選択した３色")   
@@ -175,9 +177,8 @@ def app():
     st.header("Q2：楽しい(fun)")
     st.bar_chart(df_tanoshii_count)
 
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("tanoshii.treemap.png")    
+
+    st.subheader("トレーニング参加者全体の選択色")  
     
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
@@ -202,6 +203,11 @@ def app():
     with col5:
         color = st.color_picker('Q2-5', '#FFA511')
         st.write(color)
+
+        
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
+    st.image("tanoshii.treemap.png")  
+   
 
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
