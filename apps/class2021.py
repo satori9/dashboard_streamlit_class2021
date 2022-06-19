@@ -117,7 +117,7 @@ def app():
     st.header("Q1：愛らしい(lovely)")
     #st.bar_chart(df_airashii_count)
  
-    st.subheader("トレーニング参加者全体の選択色")
+
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -144,6 +144,7 @@ def app():
         
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("airashii.treemap.bmp")
     
         
@@ -206,6 +207,7 @@ def app():
 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("tanoshii.treemap.png")  
    
 
@@ -247,6 +249,7 @@ def app():
 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("goukana.treemap.bmp")        
         
         
@@ -288,6 +291,7 @@ def app():
 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")    
     st.image("sobokuna.treemap.bmp")   
     
  
@@ -326,7 +330,8 @@ def app():
         color = st.color_picker('Q5-5', '#003232')
         st.write(color)
         
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("ajiwai.treemap.bmp")        
 
                    
@@ -368,6 +373,7 @@ def app():
         st.write(color)
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("kakucho.treemap.bmp")        
         
 
@@ -410,6 +416,7 @@ def app():
         
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")    
     st.image("yuuga.treemap.bmp")
     
 
@@ -451,6 +458,7 @@ def app():
         st.write(color)    
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("kihin.treemap.bmp") 
 
 
@@ -491,6 +499,7 @@ def app():
         st.write(color)    
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("gouriteki.treemap.bmp")
         
         
@@ -532,6 +541,7 @@ def app():
 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("spring.treemap.bmp")        
         
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -582,6 +592,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("summer.treemap.bmp")
 
 
@@ -633,6 +644,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("autumn.treemap.bmp")
         
         
@@ -684,6 +696,7 @@ def app():
         st.write(color)   
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")    
     st.image("winter.treemap.bmp")
         
         
@@ -736,6 +749,7 @@ def app():
         st.write(color)   
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("morning.treemap.bmp")
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -787,6 +801,7 @@ def app():
 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("midday.treemap.bmp")        
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -840,6 +855,7 @@ def app():
 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("sunset.treemap.bmp")        
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -891,6 +907,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("night.treemap.bmp")
         
         #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -942,6 +959,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("favorite.treemap.bmp") 
 
 #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -998,6 +1016,7 @@ def app():
         st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("hometown.treemap.bmp") 
 
 
@@ -1038,6 +1057,7 @@ def app():
 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
     st.image("nation.treemap.bmp")        
         
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
