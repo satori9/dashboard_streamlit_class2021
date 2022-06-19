@@ -183,7 +183,7 @@ def app():
     
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
     with col1:
         color = st.color_picker('Q2-1', '#FFFF26')
@@ -202,9 +202,16 @@ def app():
         st.write(color)
 
     with col5:
-        color = st.color_picker('Q2-5', '#FFA511')
+        color = st.color_picker('Q2-5', '#FF7F1A')
         st.write(color)
 
+   with col6:
+        color = st.color_picker('Q2-6', '#FFA511')
+        st.write(color)
+
+    with col7:
+        color = st.color_picker('Q2-7', '#FF0000')
+        st.write(color)       
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
     st.subheader("トレーニング参加者全体の選択色")
@@ -229,7 +236,8 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+
 
     with col1:
         color = st.color_picker('Q3-1', '#FF0000')
@@ -246,7 +254,15 @@ def app():
     with col5:
         color = st.color_picker('Q3-5', '#FFFF26')
         st.write(color)
-
+        
+    with col6:
+        color = st.color_picker('Q4-6', '#FF2A22')
+        st.write(color)
+        
+    with col7:
+        color = st.color_picker('Q4-7', '#D30000')
+        st.write(color)   
+        
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
@@ -288,8 +304,30 @@ def app():
     with col5:
         color = st.color_picker('Q4-5', '#656565')
         st.write(color)
-
         
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
+
+    with col1:
+        color = st.color_picker('Q4-6', '#FFD4B7')
+        st.write(color)
+    with col2:
+        color = st.color_picker('Q4-7', '#FFF1B6')
+        st.write(color)
+    with col3:
+        color = st.color_picker('Q4-8', '#EAFFB6')
+        st.write(color)
+    with col4:
+        color = st.color_picker('Q4-9', '#B2B2B2')
+        st.write(color)
+        
+    with col5:
+        color = st.color_picker('Q4-10', '#656565')
+        st.write(color)
+        
+    with col6:
+        color = st.color_picker('Q4-11', '#656500')
+        st.write(color)
+     
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")    
     st.image("sobokuna.treemap.bmp")   
@@ -324,11 +362,27 @@ def app():
         color = st.color_picker('Q5-3', '#D35000')
         st.write(color)
     with col4:
-        color = st.color_picker('Q5-4', '#650000')
+        color = st.color_picker('Q5-4', '#D37600')
         st.write(color)
     with col5:
         color = st.color_picker('Q5-5', '#003232')
         st.write(color)
+        
+   col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        color = st.color_picker('Q5-1', '#A43E00')
+        st.write(color)
+    with col2:
+        color = st.color_picker('Q5-2', '#A38000')
+        st.write(color)
+    with col3:
+        color = st.color_picker('Q5-3', '#650000')
+        st.write(color)
+    with col4:
+        color = st.color_picker('Q5-4', '#003232')
+        st.write(color)
+ 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
     st.subheader("トレーニング参加者全体の選択色")
@@ -354,7 +408,7 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
 
     with col1:
         color = st.color_picker('Q6-1', '#FFFF00')
@@ -370,6 +424,10 @@ def app():
         st.write(color)
     with col5:
         color = st.color_picker('Q6-5', '#D30000')
+        st.write(color)
+        
+    with col6:
+        color = st.color_picker('Q6-6', '#750000)
         st.write(color)
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
@@ -396,7 +454,7 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4 = st.columns(4)
 
     with col1:
         color = st.color_picker('Q7-1', '#A40066')
@@ -410,10 +468,23 @@ def app():
     with col4:
         color = st.color_picker('Q7-4', '#87EAFF')
         st.write(color)
+                                
+    col1, col2, col3, col4 = st.columns(4)
+
     with col5:
-        color = st.color_picker('Q7-5', '#750000')
+        color = st.color_picker('Q7-5', '#7F00D4')
         st.write(color)
-        
+    with col6:
+        color = st.color_picker('Q7-2', '#750000')
+        st.write(color)
+    with col7:
+        color = st.color_picker('Q7-3', '#B9BFFF')
+        st.write(color)
+    with col8:
+        color = st.color_picker('Q7-4', '#58B1FF')
+        st.write(color)                                
+                                
+                               
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")    
@@ -439,7 +510,7 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
 
     with col1:
         color = st.color_picker('Q8-1', '#FFFFFF')
@@ -456,7 +527,11 @@ def app():
     with col5:
         color = st.color_picker('Q8-5', '#000000')
         st.write(color)    
-
+                                
+    with col6:
+        color = st.color_picker('Q8-6', '#FFFFB5')
+        st.write(color)    
+                                
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
     st.image("kihin.treemap.bmp") 
@@ -480,7 +555,7 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4 = st.columns(4)
 
     with col1:
         color = st.color_picker('Q9-1', '#0000D5')
@@ -494,9 +569,19 @@ def app():
     with col4:
         color = st.color_picker('Q9-4', '#FFFFFF')
         st.write(color)
-    with col5:
+                              
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
         color = st.color_picker('Q9-5', '#FFFF00')
-        st.write(color)    
+        st.write(color) 
+    with col2:
+        color = st.color_picker('Q9-2', '#0085FF')
+        st.write(color)
+    with col3:
+        color = st.color_picker('Q9-3', '#7F7F7F')
+        st.write(color)                                
+   
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
@@ -573,7 +658,7 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
 
     with col1:
         color = st.color_picker('Q11-1', '#FFFF00')
@@ -590,7 +675,11 @@ def app():
     with col5:
         color = st.color_picker('Q11-5', '#FF0000')
         st.write(color) 
-
+                                
+    with col6:
+        color = st.color_picker('Q11-5', '#FF6100')
+        st.write(color) 
+                                
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
     st.image("summer.treemap.bmp")
@@ -625,7 +714,7 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
 
     with col1:
         color = st.color_picker('Q12-1', '#A35C00')
@@ -642,7 +731,10 @@ def app():
     with col5:
         color = st.color_picker('Q12-5', '#755C00')
         st.write(color) 
-
+   with col6:
+        color = st.color_picker('Q12-6', '#FF7F1A')
+        st.write(color) 
+                                
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
     st.image("autumn.treemap.bmp")
@@ -730,7 +822,7 @@ def app():
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         color = st.color_picker('Q14-1', '#B7F2FF')
@@ -741,12 +833,23 @@ def app():
     with col3:
         color = st.color_picker('Q14-3', '#FFFFB5')
         st.write(color)
-    with col4:
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
         color = st.color_picker('Q14-4', '#FF2A22')
         st.write(color)
-    with col5:
-        color = st.color_picker('Q14-5', '#FF9B56')
+    with col2:
+        color = st.color_picker('Q14-5', '#FFF1B6)
         st.write(color)   
+    with col3:
+        color = st.color_picker('Q14-6', '#FF9B56')
+        st.write(color)
+    with col4:
+        color = st.color_picker('Q14-7', '#FFB954')
+        st.write(color)                                
+
+
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
