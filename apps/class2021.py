@@ -144,7 +144,7 @@ def app():
         
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.image("airashii.treemap.png")
+    st.image("airashii.treemap.bmp")
     
         
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
@@ -508,7 +508,7 @@ def app():
     df_spring_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
 
     st.header("Q10：春(spring)")
-    st.bar_chart(df_spring_count)
+    #st.bar_chart(df_spring_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
@@ -532,7 +532,7 @@ def app():
 
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    #st.image("spring.treemap.bmp")        
+    st.image("spring.treemap.bmp")        
         
     #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
     if choose_id == '1':
