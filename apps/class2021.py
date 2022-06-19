@@ -72,7 +72,7 @@ def app():
     d_col = dict(zip(cdf['num'], cdf['#col']))
 
     #カラーチップを表示        
-    st.image("colorchip156.png", caption='156色カラーパレット') 
+    #st.image("colorchip156.png", caption='156色カラーパレット') 
 
 
     #streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
@@ -504,7 +504,7 @@ def app():
     df_spring_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
 
     st.header("Q10：春(spring)")
-    #st.bar_chart(df_spring_count)
+    st.bar_chart(df_spring_count)
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
