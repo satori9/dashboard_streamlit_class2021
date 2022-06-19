@@ -514,10 +514,10 @@ def app():
         color = st.color_picker('Q8-4', '#BF55FF')
         st.write(color)
     with col5:
-        color = st.color_picker('Q8-5', '#000000')
+        color = st.color_picker('Q8-5', '#FFFFB5')
         st.write(color)                                   
     with col6:
-        color = st.color_picker('Q8-6', '#FFFFB5')
+        color = st.color_picker('Q8-6', '#000000')
         st.write(color)    
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
@@ -713,13 +713,13 @@ def app():
         color = st.color_picker('Q12-3', '#A43E00')
         st.write(color)
     with col4:
-        color = st.color_picker('Q12-4', '#750000')
+        color = st.color_picker('Q12-4', '#A40000')
         st.write(color)
     with col5:
-        color = st.color_picker('Q12-5', '#755C00')
+        color = st.color_picker('Q12-5', '#750000')
         st.write(color) 
     with col6:
-        color = st.color_picker('Q12-6', '#FF7F1A')
+        color = st.color_picker('Q12-6', '#755C00')
         st.write(color) 
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
